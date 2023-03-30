@@ -1,0 +1,1102 @@
+Component: Arm Compiler for Embedded 6.19 Tool: armlink [5e73cb00]
+
+==============================================================================
+
+Section Cross References
+
+    clock.o(.text.config_ext_clk) refers to mdr32fxqi_rst_clk.o(.text.RST_CLK_DeInit) for RST_CLK_DeInit
+    clock.o(.text.config_ext_clk) refers to mdr32fxqi_rst_clk.o(.text.RST_CLK_HSEconfig) for RST_CLK_HSEconfig
+    clock.o(.text.config_ext_clk) refers to mdr32fxqi_rst_clk.o(.text.RST_CLK_CPU_PLLconfig) for RST_CLK_CPU_PLLconfig
+    clock.o(.text.config_ext_clk) refers to mdr32fxqi_rst_clk.o(.text.RST_CLK_CPU_PLLcmd) for RST_CLK_CPU_PLLcmd
+    clock.o(.text.config_ext_clk) refers to mdr32fxqi_rst_clk.o(.text.RST_CLK_CPU_PLLstatus) for RST_CLK_CPU_PLLstatus
+    clock.o(.text.config_ext_clk) refers to mdr32fxqi_rst_clk.o(.text.RST_CLK_CPU_PLLuse) for RST_CLK_CPU_PLLuse
+    clock.o(.text.config_ext_clk) refers to mdr32fxqi_rst_clk.o(.text.RST_CLK_CPUclkSelection) for RST_CLK_CPUclkSelection
+    clock.o(.ARM.exidx.text.config_ext_clk) refers to clock.o(.text.config_ext_clk) for [Anonymous Symbol]
+    clock.o(.text.step_timer_init) refers to mdr32fxqi_timer.o(.text.TIMER_DeInit) for TIMER_DeInit
+    clock.o(.text.step_timer_init) refers to mdr32fxqi_rst_clk.o(.text.RST_CLK_PCLKcmd) for RST_CLK_PCLKcmd
+    clock.o(.text.step_timer_init) refers to mdr32fxqi_timer.o(.text.TIMER_CntInit) for TIMER_CntInit
+    clock.o(.text.step_timer_init) refers to mdr32fxqi_timer.o(.text.TIMER_ITConfig) for TIMER_ITConfig
+    clock.o(.text.step_timer_init) refers to clock.o(.text.__NVIC_EnableIRQ) for __NVIC_EnableIRQ
+    clock.o(.text.step_timer_init) refers to mdr32fxqi_timer.o(.text.TIMER_BRGInit) for TIMER_BRGInit
+    clock.o(.ARM.exidx.text.step_timer_init) refers to clock.o(.text.step_timer_init) for [Anonymous Symbol]
+    clock.o(.ARM.exidx.text.__NVIC_EnableIRQ) refers to clock.o(.text.__NVIC_EnableIRQ) for [Anonymous Symbol]
+    clock.o(.text.step_timer_update_step) refers to mdr32fxqi_timer.o(.text.TIMER_SetCntAutoreload) for TIMER_SetCntAutoreload
+    clock.o(.ARM.exidx.text.step_timer_update_step) refers to clock.o(.text.step_timer_update_step) for [Anonymous Symbol]
+    clock.o(.text.step_timer_restart) refers to mdr32fxqi_timer.o(.text.TIMER_Cmd) for TIMER_Cmd
+    clock.o(.text.step_timer_restart) refers to mdr32fxqi_timer.o(.text.TIMER_SetCounter) for TIMER_SetCounter
+    clock.o(.ARM.exidx.text.step_timer_restart) refers to clock.o(.text.step_timer_restart) for [Anonymous Symbol]
+    clock.o(.text.step_timer_stop) refers to mdr32fxqi_timer.o(.text.TIMER_Cmd) for TIMER_Cmd
+    clock.o(.text.step_timer_stop) refers to mdr32fxqi_timer.o(.text.TIMER_SetCounter) for TIMER_SetCounter
+    clock.o(.ARM.exidx.text.step_timer_stop) refers to clock.o(.text.step_timer_stop) for [Anonymous Symbol]
+    clock.o(.text.TIMER1_IRQHandler) refers to clock.o(.text.step_timer_stop) for step_timer_stop
+    clock.o(.text.TIMER1_IRQHandler) refers to main.o(.bss.fuzzyRegulator) for fuzzyRegulator
+    clock.o(.text.TIMER1_IRQHandler) refers to clock.o(.text.step_timer_update_step) for step_timer_update_step
+    clock.o(.text.TIMER1_IRQHandler) refers to clock.o(.text.step_timer_restart) for step_timer_restart
+    clock.o(.ARM.exidx.text.TIMER1_IRQHandler) refers to clock.o(.text.TIMER1_IRQHandler) for [Anonymous Symbol]
+    clock.o(.text.sys_timer_init) refers to main.o(.bss.fuzzyRegulator) for fuzzyRegulator
+    clock.o(.text.sys_timer_init) refers to clock.o(.text.__NVIC_EnableIRQ) for __NVIC_EnableIRQ
+    clock.o(.ARM.exidx.text.sys_timer_init) refers to clock.o(.text.sys_timer_init) for [Anonymous Symbol]
+    clock.o(.ARM.exidx.text.sys_timer_start) refers to clock.o(.text.sys_timer_start) for [Anonymous Symbol]
+    clock.o(.ARM.exidx.text.sys_timer_stop) refers to clock.o(.text.sys_timer_stop) for [Anonymous Symbol]
+    clock.o(.text.SysTick_Handler) refers to clock.o(.text.sys_timer_stop) for sys_timer_stop
+    clock.o(.text.SysTick_Handler) refers to main.o(.bss.fuzzyRegulator) for fuzzyRegulator
+    clock.o(.text.SysTick_Handler) refers to clock.o(.text.sys_timer_start) for sys_timer_start
+    clock.o(.ARM.exidx.text.SysTick_Handler) refers to clock.o(.text.SysTick_Handler) for [Anonymous Symbol]
+    current_sensor.o(.text.ssp_init) refers to mdr32fxqi_rst_clk.o(.text.RST_CLK_PCLKcmd) for RST_CLK_PCLKcmd
+    current_sensor.o(.text.ssp_init) refers to mdr32fxqi_port.o(.text.PORT_StructInit) for PORT_StructInit
+    current_sensor.o(.text.ssp_init) refers to mdr32fxqi_port.o(.text.PORT_Init) for PORT_Init
+    current_sensor.o(.text.ssp_init) refers to mdr32fxqi_ssp.o(.text.SSP_DeInit) for SSP_DeInit
+    current_sensor.o(.text.ssp_init) refers to mdr32fxqi_ssp.o(.text.SSP_BRGInit) for SSP_BRGInit
+    current_sensor.o(.text.ssp_init) refers to mdr32fxqi_ssp.o(.text.SSP_StructInit) for SSP_StructInit
+    current_sensor.o(.text.ssp_init) refers to mdr32fxqi_ssp.o(.text.SSP_Init) for SSP_Init
+    current_sensor.o(.text.ssp_init) refers to mdr32fxqi_ssp.o(.text.SSP_Cmd) for SSP_Cmd
+    current_sensor.o(.ARM.exidx.text.ssp_init) refers to current_sensor.o(.text.ssp_init) for [Anonymous Symbol]
+    current_sensor.o(.text.current_sensor_read_ID) refers to mdr32fxqi_ssp.o(.text.SSP_SendData) for SSP_SendData
+    current_sensor.o(.text.current_sensor_read_ID) refers to mdr32fxqi_ssp.o(.text.SSP_GetFlagStatus) for SSP_GetFlagStatus
+    current_sensor.o(.text.current_sensor_read_ID) refers to mdr32fxqi_ssp.o(.text.SSP_ReceiveData) for SSP_ReceiveData
+    current_sensor.o(.ARM.exidx.text.current_sensor_read_ID) refers to current_sensor.o(.text.current_sensor_read_ID) for [Anonymous Symbol]
+    current_sensor.o(.text.current_sensor_set_80SPS) refers to mdr32fxqi_ssp.o(.text.SSP_SendData) for SSP_SendData
+    current_sensor.o(.text.current_sensor_set_80SPS) refers to mdr32fxqi_ssp.o(.text.SSP_GetFlagStatus) for SSP_GetFlagStatus
+    current_sensor.o(.ARM.exidx.text.current_sensor_set_80SPS) refers to current_sensor.o(.text.current_sensor_set_80SPS) for [Anonymous Symbol]
+    current_sensor.o(.text.current_sensor_get_current) refers to mdr32fxqi_ssp.o(.text.SSP_SendData) for SSP_SendData
+    current_sensor.o(.text.current_sensor_get_current) refers to mdr32fxqi_ssp.o(.text.SSP_GetFlagStatus) for SSP_GetFlagStatus
+    current_sensor.o(.text.current_sensor_get_current) refers to mdr32fxqi_ssp.o(.text.SSP_ReceiveData) for SSP_ReceiveData
+    current_sensor.o(.ARM.exidx.text.current_sensor_get_current) refers to current_sensor.o(.text.current_sensor_get_current) for [Anonymous Symbol]
+    fuzzy_regulator.o(.text.fuzzy_regulator_update_step) refers to dflt_clz.o(x$fpl$dfltu) for __aeabi_ui2d
+    fuzzy_regulator.o(.text.fuzzy_regulator_update_step) refers to dmul.o(x$fpl$dmul) for __aeabi_dmul
+    fuzzy_regulator.o(.text.fuzzy_regulator_update_step) refers to dfixu.o(x$fpl$dfixu) for __aeabi_d2uiz
+    fuzzy_regulator.o(.ARM.exidx.text.fuzzy_regulator_update_step) refers to fuzzy_regulator.o(.text.fuzzy_regulator_update_step) for [Anonymous Symbol]
+    fuzzy_regulator.o(.text.init_fuzzy_regulator) refers to fuzzy_regulator.o(.data.ch1Ingr) for ch1Ingr
+    fuzzy_regulator.o(.text.init_fuzzy_regulator) refers to fuzzy_regulator.o(.data.ch1Dfrn) for ch1Dfrn
+    fuzzy_regulator.o(.text.init_fuzzy_regulator) refers to fuzzy_regulator.o(.data.ch2Ingr) for ch2Ingr
+    fuzzy_regulator.o(.text.init_fuzzy_regulator) refers to fuzzy_regulator.o(.data.ch2Dfrn) for ch2Dfrn
+    fuzzy_regulator.o(.text.init_fuzzy_regulator) refers to fuzzy_regulator.o(.data.ch3Ingr) for ch3Ingr
+    fuzzy_regulator.o(.text.init_fuzzy_regulator) refers to fuzzy_regulator.o(.data.ch3Dfrn) for ch3Dfrn
+    fuzzy_regulator.o(.text.init_fuzzy_regulator) refers to fuzzy_regulator.o(.data.ch4Ingr) for ch4Ingr
+    fuzzy_regulator.o(.text.init_fuzzy_regulator) refers to fuzzy_regulator.o(.data.ch4Dfrn) for ch4Dfrn
+    fuzzy_regulator.o(.text.init_fuzzy_regulator) refers to fuzzy_regulator.o(.data.ch5Ingr) for ch5Ingr
+    fuzzy_regulator.o(.text.init_fuzzy_regulator) refers to fuzzy_regulator.o(.data.ch5Dfrn) for ch5Dfrn
+    fuzzy_regulator.o(.ARM.exidx.text.init_fuzzy_regulator) refers to fuzzy_regulator.o(.text.init_fuzzy_regulator) for [Anonymous Symbol]
+    fuzzy_regulator.o(.text.fuzzy_reg_transform) refers to fuzzy_regulator.o(.text.fuzzy_ch_transform) for fuzzy_ch_transform
+    fuzzy_regulator.o(.ARM.exidx.text.fuzzy_reg_transform) refers to fuzzy_regulator.o(.text.fuzzy_reg_transform) for [Anonymous Symbol]
+    fuzzy_regulator.o(.text.fuzzy_ch_transform) refers to fuzzy_regulator.o(.text.IN_mux) for IN_mux
+    fuzzy_regulator.o(.text.fuzzy_ch_transform) refers to fuzzy_regulator.o(.text.PP_mux) for PP_mux
+    fuzzy_regulator.o(.text.fuzzy_ch_transform) refers to fuzzy_regulator.o(.text.NL_transform) for NL_transform
+    fuzzy_regulator.o(.ARM.exidx.text.fuzzy_ch_transform) refers to fuzzy_regulator.o(.text.fuzzy_ch_transform) for [Anonymous Symbol]
+    fuzzy_regulator.o(.ARM.exidx.text.intgr_func) refers to fuzzy_regulator.o(.text.intgr_func) for [Anonymous Symbol]
+    fuzzy_regulator.o(.ARM.exidx.text.dfrn_func) refers to fuzzy_regulator.o(.text.dfrn_func) for [Anonymous Symbol]
+    fuzzy_regulator.o(.ARM.exidx.text.IN_mux) refers to fuzzy_regulator.o(.text.IN_mux) for [Anonymous Symbol]
+    fuzzy_regulator.o(.ARM.exidx.text.PP_mux) refers to fuzzy_regulator.o(.text.PP_mux) for [Anonymous Symbol]
+    fuzzy_regulator.o(.ARM.exidx.text.NL_transform) refers to fuzzy_regulator.o(.text.NL_transform) for [Anonymous Symbol]
+    fuzzy_regulator.o(.data.ch1Ingr) refers to fuzzy_regulator.o(.text.intgr_func) for intgr_func
+    fuzzy_regulator.o(.data.ch1Dfrn) refers to fuzzy_regulator.o(.text.dfrn_func) for dfrn_func
+    fuzzy_regulator.o(.data.ch2Ingr) refers to fuzzy_regulator.o(.text.intgr_func) for intgr_func
+    fuzzy_regulator.o(.data.ch2Dfrn) refers to fuzzy_regulator.o(.text.dfrn_func) for dfrn_func
+    fuzzy_regulator.o(.data.ch3Ingr) refers to fuzzy_regulator.o(.text.intgr_func) for intgr_func
+    fuzzy_regulator.o(.data.ch3Dfrn) refers to fuzzy_regulator.o(.text.dfrn_func) for dfrn_func
+    fuzzy_regulator.o(.data.ch4Ingr) refers to fuzzy_regulator.o(.text.intgr_func) for intgr_func
+    fuzzy_regulator.o(.data.ch4Dfrn) refers to fuzzy_regulator.o(.text.dfrn_func) for dfrn_func
+    fuzzy_regulator.o(.data.ch5Ingr) refers to fuzzy_regulator.o(.text.intgr_func) for intgr_func
+    fuzzy_regulator.o(.data.ch5Dfrn) refers to fuzzy_regulator.o(.text.dfrn_func) for dfrn_func
+    i2c.o(.text.init_i2c_driver) refers to mdr32fxqi_rst_clk.o(.text.RST_CLK_PCLKcmd) for RST_CLK_PCLKcmd
+    i2c.o(.text.init_i2c_driver) refers to mdr32fxqi_port.o(.text.PORT_StructInit) for PORT_StructInit
+    i2c.o(.text.init_i2c_driver) refers to mdr32fxqi_port.o(.text.PORT_Init) for PORT_Init
+    i2c.o(.text.init_i2c_driver) refers to mdr32fxqi_i2c.o(.text.I2C_StructInit) for I2C_StructInit
+    i2c.o(.text.init_i2c_driver) refers to mdr32fxqi_i2c.o(.text.I2C_Init) for I2C_Init
+    i2c.o(.text.init_i2c_driver) refers to mdr32fxqi_i2c.o(.text.I2C_Cmd) for I2C_Cmd
+    i2c.o(.ARM.exidx.text.init_i2c_driver) refers to i2c.o(.text.init_i2c_driver) for [Anonymous Symbol]
+    i2c.o(.text.mem_wr) refers to mdr32fxqi_i2c.o(.text.I2C_Send7bitAddress) for I2C_Send7bitAddress
+    i2c.o(.text.mem_wr) refers to mdr32fxqi_i2c.o(.text.I2C_CheckEvent) for I2C_CheckEvent
+    i2c.o(.text.mem_wr) refers to mdr32fxqi_i2c.o(.text.I2C_SendByte) for I2C_SendByte
+    i2c.o(.text.mem_wr) refers to mdr32fxqi_i2c.o(.text.I2C_SendSTOP) for I2C_SendSTOP
+    i2c.o(.ARM.exidx.text.mem_wr) refers to i2c.o(.text.mem_wr) for [Anonymous Symbol]
+    i2c.o(.ARM.exidx.text.mem_rd) refers to i2c.o(.text.mem_rd) for [Anonymous Symbol]
+    main.o(.ARM.exidx.text.eMBRegInputCB) refers to main.o(.text.eMBRegInputCB) for [Anonymous Symbol]
+    main.o(.text.eMBRegHoldingCB) refers to main.o(.bss.usRegHoldingStart) for usRegHoldingStart
+    main.o(.text.eMBRegHoldingCB) refers to main.o(.bss.lRegHoldingBuf) for lRegHoldingBuf
+    main.o(.ARM.exidx.text.eMBRegHoldingCB) refers to main.o(.text.eMBRegHoldingCB) for [Anonymous Symbol]
+    main.o(.text.eMBRegCoilsCB) refers to main.o(.data.usRegCoilsStart) for usRegCoilsStart
+    main.o(.text.eMBRegCoilsCB) refers to main.o(.bss.bRegCoilsBuf) for bRegCoilsBuf
+    main.o(.ARM.exidx.text.eMBRegCoilsCB) refers to main.o(.text.eMBRegCoilsCB) for [Anonymous Symbol]
+    main.o(.ARM.exidx.text.eMBRegDiscreteCB) refers to main.o(.text.eMBRegDiscreteCB) for [Anonymous Symbol]
+    main.o(.text.main) refers to clock.o(.text.config_ext_clk) for config_ext_clk
+    main.o(.text.main) refers to main.o(.bss.lRegHoldingBuf) for lRegHoldingBuf
+    main.o(.text.main) refers to main.o(.bss.bRegCoilsBuf) for bRegCoilsBuf
+    main.o(.text.main) refers to main.o(.bss.fuzzyRegulator) for fuzzyRegulator
+    main.o(.text.main) refers to fuzzy_regulator.o(.text.init_fuzzy_regulator) for init_fuzzy_regulator
+    main.o(.text.main) refers to fuzzy_regulator.o(.text.fuzzy_reg_transform) for fuzzy_reg_transform
+    main.o(.text.main) refers to motor_control.o(.text.motor_control_init) for motor_control_init
+    main.o(.text.main) refers to motor_control.o(.text.motor_control_write_mode) for motor_control_write_mode
+    main.o(.text.main) refers to motor_control.o(.text.motor_control_write_state) for motor_control_write_state
+    main.o(.text.main) refers to motor_control.o(.text.set_main_motor_out_volt) for set_main_motor_out_volt
+    main.o(.text.main) refers to mb.o(.text.eMBInit) for eMBInit
+    main.o(.text.main) refers to mb.o(.text.eMBEnable) for eMBEnable
+    main.o(.text.main) refers to mb.o(.text.eMBPoll) for eMBPoll
+    main.o(.ARM.exidx.text.main) refers to main.o(.text.main) for [Anonymous Symbol]
+    mb.o(.text.eMBInit) refers to mb.o(.bss.ucMBAddress) for ucMBAddress
+    mb.o(.text.eMBInit) refers to mb.o(.bss.pvMBFrameStartCur) for pvMBFrameStartCur
+    mb.o(.text.eMBInit) refers to mbrtu.o(.text.eMBRTUStart) for eMBRTUStart
+    mb.o(.text.eMBInit) refers to mb.o(.bss.pvMBFrameStopCur) for pvMBFrameStopCur
+    mb.o(.text.eMBInit) refers to mbrtu.o(.text.eMBRTUStop) for eMBRTUStop
+    mb.o(.text.eMBInit) refers to mb.o(.bss.peMBFrameSendCur) for peMBFrameSendCur
+    mb.o(.text.eMBInit) refers to mbrtu.o(.text.eMBRTUSend) for eMBRTUSend
+    mb.o(.text.eMBInit) refers to mb.o(.bss.peMBFrameReceiveCur) for peMBFrameReceiveCur
+    mb.o(.text.eMBInit) refers to mbrtu.o(.text.eMBRTUReceive) for eMBRTUReceive
+    mb.o(.text.eMBInit) refers to mb.o(.bss.pvMBFrameCloseCur) for pvMBFrameCloseCur
+    mb.o(.text.eMBInit) refers to mb.o(.bss.pxMBFrameCBByteReceived) for pxMBFrameCBByteReceived
+    mb.o(.text.eMBInit) refers to mbrtu.o(.text.xMBRTUReceiveFSM) for xMBRTUReceiveFSM
+    mb.o(.text.eMBInit) refers to mb.o(.bss.pxMBFrameCBTransmitterEmpty) for pxMBFrameCBTransmitterEmpty
+    mb.o(.text.eMBInit) refers to mbrtu.o(.text.xMBRTUTransmitFSM) for xMBRTUTransmitFSM
+    mb.o(.text.eMBInit) refers to mb.o(.bss.pxMBPortCBTimerExpired) for pxMBPortCBTimerExpired
+    mb.o(.text.eMBInit) refers to mbrtu.o(.text.xMBRTUTimerT35Expired) for xMBRTUTimerT35Expired
+    mb.o(.text.eMBInit) refers to mbrtu.o(.text.eMBRTUInit) for eMBRTUInit
+    mb.o(.text.eMBInit) refers to portevent.o(.text.xMBPortEventInit) for xMBPortEventInit
+    mb.o(.text.eMBInit) refers to mb.o(.bss.eMBCurrentMode) for eMBCurrentMode
+    mb.o(.text.eMBInit) refers to mb.o(.data.eMBState) for eMBState
+    mb.o(.ARM.exidx.text.eMBInit) refers to mb.o(.text.eMBInit) for [Anonymous Symbol]
+    mb.o(.text.eMBRegisterCB) refers to mb.o(.data.xFuncHandlers) for xFuncHandlers
+    mb.o(.ARM.exidx.text.eMBRegisterCB) refers to mb.o(.text.eMBRegisterCB) for [Anonymous Symbol]
+    mb.o(.text.eMBClose) refers to mb.o(.data.eMBState) for eMBState
+    mb.o(.text.eMBClose) refers to mb.o(.bss.pvMBFrameCloseCur) for pvMBFrameCloseCur
+    mb.o(.ARM.exidx.text.eMBClose) refers to mb.o(.text.eMBClose) for [Anonymous Symbol]
+    mb.o(.text.eMBEnable) refers to mb.o(.data.eMBState) for eMBState
+    mb.o(.text.eMBEnable) refers to mb.o(.bss.pvMBFrameStartCur) for pvMBFrameStartCur
+    mb.o(.ARM.exidx.text.eMBEnable) refers to mb.o(.text.eMBEnable) for [Anonymous Symbol]
+    mb.o(.text.eMBDisable) refers to mb.o(.data.eMBState) for eMBState
+    mb.o(.text.eMBDisable) refers to mb.o(.bss.pvMBFrameStopCur) for pvMBFrameStopCur
+    mb.o(.ARM.exidx.text.eMBDisable) refers to mb.o(.text.eMBDisable) for [Anonymous Symbol]
+    mb.o(.text.eMBPoll) refers to mb.o(.data.eMBState) for eMBState
+    mb.o(.text.eMBPoll) refers to portevent.o(.text.xMBPortEventGet) for xMBPortEventGet
+    mb.o(.text.eMBPoll) refers to mb.o(.bss.peMBFrameReceiveCur) for peMBFrameReceiveCur
+    mb.o(.text.eMBPoll) refers to mb.o(.bss.eMBPoll.ucRcvAddress) for eMBPoll.ucRcvAddress
+    mb.o(.text.eMBPoll) refers to mb.o(.bss.eMBPoll.ucMBFrame) for eMBPoll.ucMBFrame
+    mb.o(.text.eMBPoll) refers to mb.o(.bss.eMBPoll.usLength) for eMBPoll.usLength
+    mb.o(.text.eMBPoll) refers to mb.o(.bss.ucMBAddress) for ucMBAddress
+    mb.o(.text.eMBPoll) refers to portevent.o(.text.xMBPortEventPost) for xMBPortEventPost
+    mb.o(.text.eMBPoll) refers to mb.o(.bss.eMBPoll.ucFunctionCode) for eMBPoll.ucFunctionCode
+    mb.o(.text.eMBPoll) refers to mb.o(.bss.eMBPoll.eException) for eMBPoll.eException
+    mb.o(.text.eMBPoll) refers to mb.o(.data.xFuncHandlers) for xFuncHandlers
+    mb.o(.text.eMBPoll) refers to mb.o(.bss.eMBCurrentMode) for eMBCurrentMode
+    mb.o(.text.eMBPoll) refers to mb.o(.bss.peMBFrameSendCur) for peMBFrameSendCur
+    mb.o(.ARM.exidx.text.eMBPoll) refers to mb.o(.text.eMBPoll) for [Anonymous Symbol]
+    mb.o(.data.xFuncHandlers) refers to mbfuncother.o(.text.eMBFuncReportSlaveID) for eMBFuncReportSlaveID
+    mb.o(.data.xFuncHandlers) refers to mbfuncinput.o(.text.eMBFuncReadInputRegister) for eMBFuncReadInputRegister
+    mb.o(.data.xFuncHandlers) refers to mbfuncholding.o(.text.eMBFuncReadHoldingRegister) for eMBFuncReadHoldingRegister
+    mb.o(.data.xFuncHandlers) refers to mbfuncholding.o(.text.eMBFuncWriteMultipleHoldingRegister) for eMBFuncWriteMultipleHoldingRegister
+    mb.o(.data.xFuncHandlers) refers to mbfuncholding.o(.text.eMBFuncWriteHoldingRegister) for eMBFuncWriteHoldingRegister
+    mb.o(.data.xFuncHandlers) refers to mbfuncholding.o(.text.eMBFuncReadWriteMultipleHoldingRegister) for eMBFuncReadWriteMultipleHoldingRegister
+    mb.o(.data.xFuncHandlers) refers to mbfunccoils.o(.text.eMBFuncReadCoils) for eMBFuncReadCoils
+    mb.o(.data.xFuncHandlers) refers to mbfunccoils.o(.text.eMBFuncWriteCoil) for eMBFuncWriteCoil
+    mb.o(.data.xFuncHandlers) refers to mbfunccoils.o(.text.eMBFuncWriteMultipleCoils) for eMBFuncWriteMultipleCoils
+    mb.o(.data.xFuncHandlers) refers to mbfuncdisc.o(.text.eMBFuncReadDiscreteInputs) for eMBFuncReadDiscreteInputs
+    mbcrc.o(.text.usMBCRC16) refers to mbcrc.o(.rodata.aucCRCHi) for aucCRCHi
+    mbcrc.o(.text.usMBCRC16) refers to mbcrc.o(.rodata.aucCRCLo) for aucCRCLo
+    mbcrc.o(.ARM.exidx.text.usMBCRC16) refers to mbcrc.o(.text.usMBCRC16) for [Anonymous Symbol]
+    mbfunccoils.o(.text.eMBFuncReadCoils) refers to main.o(.text.eMBRegCoilsCB) for eMBRegCoilsCB
+    mbfunccoils.o(.text.eMBFuncReadCoils) refers to mbutils.o(.text.prveMBError2Exception) for prveMBError2Exception
+    mbfunccoils.o(.ARM.exidx.text.eMBFuncReadCoils) refers to mbfunccoils.o(.text.eMBFuncReadCoils) for [Anonymous Symbol]
+    mbfunccoils.o(.text.eMBFuncWriteCoil) refers to main.o(.text.eMBRegCoilsCB) for eMBRegCoilsCB
+    mbfunccoils.o(.text.eMBFuncWriteCoil) refers to mbutils.o(.text.prveMBError2Exception) for prveMBError2Exception
+    mbfunccoils.o(.ARM.exidx.text.eMBFuncWriteCoil) refers to mbfunccoils.o(.text.eMBFuncWriteCoil) for [Anonymous Symbol]
+    mbfunccoils.o(.text.eMBFuncWriteMultipleCoils) refers to main.o(.text.eMBRegCoilsCB) for eMBRegCoilsCB
+    mbfunccoils.o(.text.eMBFuncWriteMultipleCoils) refers to mbutils.o(.text.prveMBError2Exception) for prveMBError2Exception
+    mbfunccoils.o(.ARM.exidx.text.eMBFuncWriteMultipleCoils) refers to mbfunccoils.o(.text.eMBFuncWriteMultipleCoils) for [Anonymous Symbol]
+    mbfuncdisc.o(.text.eMBFuncReadDiscreteInputs) refers to main.o(.text.eMBRegDiscreteCB) for eMBRegDiscreteCB
+    mbfuncdisc.o(.text.eMBFuncReadDiscreteInputs) refers to mbutils.o(.text.prveMBError2Exception) for prveMBError2Exception
+    mbfuncdisc.o(.ARM.exidx.text.eMBFuncReadDiscreteInputs) refers to mbfuncdisc.o(.text.eMBFuncReadDiscreteInputs) for [Anonymous Symbol]
+    mbfuncholding.o(.text.eMBFuncWriteHoldingRegister) refers to main.o(.text.eMBRegHoldingCB) for eMBRegHoldingCB
+    mbfuncholding.o(.text.eMBFuncWriteHoldingRegister) refers to mbutils.o(.text.prveMBError2Exception) for prveMBError2Exception
+    mbfuncholding.o(.ARM.exidx.text.eMBFuncWriteHoldingRegister) refers to mbfuncholding.o(.text.eMBFuncWriteHoldingRegister) for [Anonymous Symbol]
+    mbfuncholding.o(.text.eMBFuncWriteMultipleHoldingRegister) refers to main.o(.text.eMBRegHoldingCB) for eMBRegHoldingCB
+    mbfuncholding.o(.text.eMBFuncWriteMultipleHoldingRegister) refers to mbutils.o(.text.prveMBError2Exception) for prveMBError2Exception
+    mbfuncholding.o(.ARM.exidx.text.eMBFuncWriteMultipleHoldingRegister) refers to mbfuncholding.o(.text.eMBFuncWriteMultipleHoldingRegister) for [Anonymous Symbol]
+    mbfuncholding.o(.text.eMBFuncReadHoldingRegister) refers to main.o(.text.eMBRegHoldingCB) for eMBRegHoldingCB
+    mbfuncholding.o(.text.eMBFuncReadHoldingRegister) refers to mbutils.o(.text.prveMBError2Exception) for prveMBError2Exception
+    mbfuncholding.o(.ARM.exidx.text.eMBFuncReadHoldingRegister) refers to mbfuncholding.o(.text.eMBFuncReadHoldingRegister) for [Anonymous Symbol]
+    mbfuncholding.o(.text.eMBFuncReadWriteMultipleHoldingRegister) refers to main.o(.text.eMBRegHoldingCB) for eMBRegHoldingCB
+    mbfuncholding.o(.text.eMBFuncReadWriteMultipleHoldingRegister) refers to mbutils.o(.text.prveMBError2Exception) for prveMBError2Exception
+    mbfuncholding.o(.ARM.exidx.text.eMBFuncReadWriteMultipleHoldingRegister) refers to mbfuncholding.o(.text.eMBFuncReadWriteMultipleHoldingRegister) for [Anonymous Symbol]
+    mbfuncinput.o(.text.eMBFuncReadInputRegister) refers to main.o(.text.eMBRegInputCB) for eMBRegInputCB
+    mbfuncinput.o(.text.eMBFuncReadInputRegister) refers to mbutils.o(.text.prveMBError2Exception) for prveMBError2Exception
+    mbfuncinput.o(.ARM.exidx.text.eMBFuncReadInputRegister) refers to mbfuncinput.o(.text.eMBFuncReadInputRegister) for [Anonymous Symbol]
+    mbfuncother.o(.text.eMBSetSlaveID) refers to mbfuncother.o(.bss.usMBSlaveIDLen) for usMBSlaveIDLen
+    mbfuncother.o(.text.eMBSetSlaveID) refers to mbfuncother.o(.bss.ucMBSlaveID) for ucMBSlaveID
+    mbfuncother.o(.text.eMBSetSlaveID) refers to rt_memcpy_v6.o(.text) for __aeabi_memcpy
+    mbfuncother.o(.ARM.exidx.text.eMBSetSlaveID) refers to mbfuncother.o(.text.eMBSetSlaveID) for [Anonymous Symbol]
+    mbfuncother.o(.text.eMBFuncReportSlaveID) refers to mbfuncother.o(.bss.usMBSlaveIDLen) for usMBSlaveIDLen
+    mbfuncother.o(.text.eMBFuncReportSlaveID) refers to mbfuncother.o(.bss.ucMBSlaveID) for ucMBSlaveID
+    mbfuncother.o(.text.eMBFuncReportSlaveID) refers to rt_memcpy_v6.o(.text) for __aeabi_memcpy
+    mbfuncother.o(.ARM.exidx.text.eMBFuncReportSlaveID) refers to mbfuncother.o(.text.eMBFuncReportSlaveID) for [Anonymous Symbol]
+    mbrtu.o(.text.eMBRTUInit) refers to portserial.o(.text.xMBPortSerialInit) for xMBPortSerialInit
+    mbrtu.o(.text.eMBRTUInit) refers to porttimer.o(.text.xMBPortTimersInit) for xMBPortTimersInit
+    mbrtu.o(.ARM.exidx.text.eMBRTUInit) refers to mbrtu.o(.text.eMBRTUInit) for [Anonymous Symbol]
+    mbrtu.o(.text.eMBRTUStart) refers to mbrtu.o(.bss.eRcvState) for eRcvState
+    mbrtu.o(.text.eMBRTUStart) refers to portserial.o(.text.vMBPortSerialEnable) for vMBPortSerialEnable
+    mbrtu.o(.text.eMBRTUStart) refers to porttimer.o(.text.vMBPortTimersEnable) for vMBPortTimersEnable
+    mbrtu.o(.ARM.exidx.text.eMBRTUStart) refers to mbrtu.o(.text.eMBRTUStart) for [Anonymous Symbol]
+    mbrtu.o(.text.eMBRTUStop) refers to portserial.o(.text.vMBPortSerialEnable) for vMBPortSerialEnable
+    mbrtu.o(.text.eMBRTUStop) refers to porttimer.o(.text.vMBPortTimersDisable) for vMBPortTimersDisable
+    mbrtu.o(.ARM.exidx.text.eMBRTUStop) refers to mbrtu.o(.text.eMBRTUStop) for [Anonymous Symbol]
+    mbrtu.o(.text.eMBRTUReceive) refers to mbrtu.o(.bss.usRcvBufferPos) for usRcvBufferPos
+    mbrtu.o(.text.eMBRTUReceive) refers to mbrtu.o(.rodata.str1.1) for .L.str
+    mbrtu.o(.text.eMBRTUReceive) refers to assert.o(.text) for __aeabi_assert
+    mbrtu.o(.text.eMBRTUReceive) refers to mbrtu.o(.bss.ucRTUBuf) for ucRTUBuf
+    mbrtu.o(.text.eMBRTUReceive) refers to mbcrc.o(.text.usMBCRC16) for usMBCRC16
+    mbrtu.o(.ARM.exidx.text.eMBRTUReceive) refers to mbrtu.o(.text.eMBRTUReceive) for [Anonymous Symbol]
+    mbrtu.o(.text.eMBRTUSend) refers to mbrtu.o(.bss.eRcvState) for eRcvState
+    mbrtu.o(.text.eMBRTUSend) refers to mbrtu.o(.bss.pucSndBufferCur) for pucSndBufferCur
+    mbrtu.o(.text.eMBRTUSend) refers to mbrtu.o(.bss.usSndBufferCount) for usSndBufferCount
+    mbrtu.o(.text.eMBRTUSend) refers to mbcrc.o(.text.usMBCRC16) for usMBCRC16
+    mbrtu.o(.text.eMBRTUSend) refers to mbrtu.o(.bss.ucRTUBuf) for ucRTUBuf
+    mbrtu.o(.text.eMBRTUSend) refers to mbrtu.o(.bss.eSndState) for eSndState
+    mbrtu.o(.text.eMBRTUSend) refers to portserial.o(.text.vMBPortSerialEnable) for vMBPortSerialEnable
+    mbrtu.o(.text.eMBRTUSend) refers to mbrtu.o(.text.xMBRTUTransmitFSM) for xMBRTUTransmitFSM
+    mbrtu.o(.ARM.exidx.text.eMBRTUSend) refers to mbrtu.o(.text.eMBRTUSend) for [Anonymous Symbol]
+    mbrtu.o(.text.xMBRTUTransmitFSM) refers to mbrtu.o(.bss.eRcvState) for eRcvState
+    mbrtu.o(.text.xMBRTUTransmitFSM) refers to mbrtu.o(.rodata.str1.1) for .L.str.3
+    mbrtu.o(.text.xMBRTUTransmitFSM) refers to assert.o(.text) for __aeabi_assert
+    mbrtu.o(.text.xMBRTUTransmitFSM) refers to mbrtu.o(.bss.eSndState) for eSndState
+    mbrtu.o(.text.xMBRTUTransmitFSM) refers to portserial.o(.text.vMBPortSerialEnable) for vMBPortSerialEnable
+    mbrtu.o(.text.xMBRTUTransmitFSM) refers to mbrtu.o(.bss.usSndBufferCount) for usSndBufferCount
+    mbrtu.o(.text.xMBRTUTransmitFSM) refers to mbrtu.o(.bss.pucSndBufferCur) for pucSndBufferCur
+    mbrtu.o(.text.xMBRTUTransmitFSM) refers to portserial.o(.text.xMBPortSerialPutByte) for xMBPortSerialPutByte
+    mbrtu.o(.text.xMBRTUTransmitFSM) refers to portevent.o(.text.xMBPortEventPost) for xMBPortEventPost
+    mbrtu.o(.ARM.exidx.text.xMBRTUTransmitFSM) refers to mbrtu.o(.text.xMBRTUTransmitFSM) for [Anonymous Symbol]
+    mbrtu.o(.text.xMBRTUReceiveFSM) refers to mbrtu.o(.bss.eSndState) for eSndState
+    mbrtu.o(.text.xMBRTUReceiveFSM) refers to mbrtu.o(.rodata.str1.1) for .L.str.2
+    mbrtu.o(.text.xMBRTUReceiveFSM) refers to assert.o(.text) for __aeabi_assert
+    mbrtu.o(.text.xMBRTUReceiveFSM) refers to portserial.o(.text.xMBPortSerialGetByte) for xMBPortSerialGetByte
+    mbrtu.o(.text.xMBRTUReceiveFSM) refers to mbrtu.o(.bss.eRcvState) for eRcvState
+    mbrtu.o(.text.xMBRTUReceiveFSM) refers to porttimer.o(.text.vMBPortTimersEnable) for vMBPortTimersEnable
+    mbrtu.o(.text.xMBRTUReceiveFSM) refers to mbrtu.o(.bss.usRcvBufferPos) for usRcvBufferPos
+    mbrtu.o(.text.xMBRTUReceiveFSM) refers to mbrtu.o(.bss.ucRTUBuf) for ucRTUBuf
+    mbrtu.o(.ARM.exidx.text.xMBRTUReceiveFSM) refers to mbrtu.o(.text.xMBRTUReceiveFSM) for [Anonymous Symbol]
+    mbrtu.o(.text.xMBRTUTimerT35Expired) refers to mbrtu.o(.bss.eRcvState) for eRcvState
+    mbrtu.o(.text.xMBRTUTimerT35Expired) refers to portevent.o(.text.xMBPortEventPost) for xMBPortEventPost
+    mbrtu.o(.text.xMBRTUTimerT35Expired) refers to mbrtu.o(.rodata.str1.1) for .L.str.4
+    mbrtu.o(.text.xMBRTUTimerT35Expired) refers to assert.o(.text) for __aeabi_assert
+    mbrtu.o(.text.xMBRTUTimerT35Expired) refers to porttimer.o(.text.vMBPortTimersDisable) for vMBPortTimersDisable
+    mbrtu.o(.ARM.exidx.text.xMBRTUTimerT35Expired) refers to mbrtu.o(.text.xMBRTUTimerT35Expired) for [Anonymous Symbol]
+    mbutils.o(.text.xMBUtilSetBits) refers to mbutils.o(.rodata.str1.1) for .L.str
+    mbutils.o(.text.xMBUtilSetBits) refers to assert.o(.text) for __aeabi_assert
+    mbutils.o(.ARM.exidx.text.xMBUtilSetBits) refers to mbutils.o(.text.xMBUtilSetBits) for [Anonymous Symbol]
+    mbutils.o(.ARM.exidx.text.xMBUtilGetBits) refers to mbutils.o(.text.xMBUtilGetBits) for [Anonymous Symbol]
+    mbutils.o(.ARM.exidx.text.prveMBError2Exception) refers to mbutils.o(.text.prveMBError2Exception) for [Anonymous Symbol]
+    motor_control.o(.text.motor_control_init) refers to mdr32fxqi_rst_clk.o(.text.RST_CLK_PCLKcmd) for RST_CLK_PCLKcmd
+    motor_control.o(.text.motor_control_init) refers to mdr32fxqi_port.o(.text.PORT_StructInit) for PORT_StructInit
+    motor_control.o(.text.motor_control_init) refers to mdr32fxqi_port.o(.text.PORT_Init) for PORT_Init
+    motor_control.o(.text.motor_control_init) refers to motor_control.o(.text.__PORT_Init) for __PORT_Init
+    motor_control.o(.text.motor_control_init) refers to mdr32fxqi_timer.o(.text.TIMER_DeInit) for TIMER_DeInit
+    motor_control.o(.text.motor_control_init) refers to mdr32fxqi_timer.o(.text.TIMER_CntInit) for TIMER_CntInit
+    motor_control.o(.text.motor_control_init) refers to mdr32fxqi_timer.o(.text.TIMER_ChnStructInit) for TIMER_ChnStructInit
+    motor_control.o(.text.motor_control_init) refers to mdr32fxqi_timer.o(.text.TIMER_ChnInit) for TIMER_ChnInit
+    motor_control.o(.text.motor_control_init) refers to mdr32fxqi_timer.o(.text.TIMER_SetChnCompare) for TIMER_SetChnCompare
+    motor_control.o(.text.motor_control_init) refers to mdr32fxqi_timer.o(.text.TIMER_ChnOutStructInit) for TIMER_ChnOutStructInit
+    motor_control.o(.text.motor_control_init) refers to mdr32fxqi_timer.o(.text.TIMER_ChnOutInit) for TIMER_ChnOutInit
+    motor_control.o(.text.motor_control_init) refers to mdr32fxqi_timer.o(.text.TIMER_BRGInit) for TIMER_BRGInit
+    motor_control.o(.text.motor_control_init) refers to mdr32fxqi_timer.o(.text.TIMER_Cmd) for TIMER_Cmd
+    motor_control.o(.text.motor_control_init) refers to mdr32fxqi_i2c.o(.text.I2C_Cmd) for I2C_Cmd
+    motor_control.o(.text.motor_control_init) refers to mdr32fxqi_i2c.o(.text.I2C_StructInit) for I2C_StructInit
+    motor_control.o(.text.motor_control_init) refers to mdr32fxqi_i2c.o(.text.I2C_Init) for I2C_Init
+    motor_control.o(.text.motor_control_init) refers to mdr32fxqi_i2c.o(.text.I2C_Send7bitAddress) for I2C_Send7bitAddress
+    motor_control.o(.text.motor_control_init) refers to motor_control.o(.text.I2C_packet_transfered) for I2C_packet_transfered
+    motor_control.o(.text.motor_control_init) refers to mdr32fxqi_i2c.o(.text.I2C_SendByte) for I2C_SendByte
+    motor_control.o(.text.motor_control_init) refers to mdr32fxqi_i2c.o(.text.I2C_SendSTOP) for I2C_SendSTOP
+    motor_control.o(.text.motor_control_init) refers to motor_control.o(.bss.motor1Mode) for motor1Mode
+    motor_control.o(.text.motor_control_init) refers to motor_control.o(.bss.motor2Mode) for motor2Mode
+    motor_control.o(.text.motor_control_init) refers to motor_control.o(.bss.motor1State) for motor1State
+    motor_control.o(.text.motor_control_init) refers to motor_control.o(.bss.motor2State) for motor2State
+    motor_control.o(.ARM.exidx.text.motor_control_init) refers to motor_control.o(.text.motor_control_init) for [Anonymous Symbol]
+    motor_control.o(.ARM.exidx.text.__PORT_Init) refers to motor_control.o(.text.__PORT_Init) for [Anonymous Symbol]
+    motor_control.o(.text.set_main_motor_out_volt) refers to mdr32fxqi_timer.o(.text.TIMER_Cmd) for TIMER_Cmd
+    motor_control.o(.text.set_main_motor_out_volt) refers to mdr32fxqi_timer.o(.text.TIMER_SetChnCompare) for TIMER_SetChnCompare
+    motor_control.o(.ARM.exidx.text.set_main_motor_out_volt) refers to motor_control.o(.text.set_main_motor_out_volt) for [Anonymous Symbol]
+    motor_control.o(.text.set_sub_motor_out_volt) refers to mdr32fxqi_timer.o(.text.TIMER_Cmd) for TIMER_Cmd
+    motor_control.o(.text.set_sub_motor_out_volt) refers to mdr32fxqi_timer.o(.text.TIMER_SetChnCompare) for TIMER_SetChnCompare
+    motor_control.o(.ARM.exidx.text.set_sub_motor_out_volt) refers to motor_control.o(.text.set_sub_motor_out_volt) for [Anonymous Symbol]
+    motor_control.o(.text.motor_control_write_mode) refers to motor_control.o(.bss.motor2Mode) for motor2Mode
+    motor_control.o(.text.motor_control_write_mode) refers to motor_control.o(.bss.motor1Mode) for motor1Mode
+    motor_control.o(.text.motor_control_write_mode) refers to motor_control.o(.bss.motor1State) for motor1State
+    motor_control.o(.text.motor_control_write_mode) refers to motor_control.o(.bss.motor2State) for motor2State
+    motor_control.o(.text.motor_control_write_mode) refers to mdr32fxqi_i2c.o(.text.I2C_Send7bitAddress) for I2C_Send7bitAddress
+    motor_control.o(.text.motor_control_write_mode) refers to motor_control.o(.text.I2C_packet_transfered) for I2C_packet_transfered
+    motor_control.o(.text.motor_control_write_mode) refers to mdr32fxqi_i2c.o(.text.I2C_SendByte) for I2C_SendByte
+    motor_control.o(.text.motor_control_write_mode) refers to mdr32fxqi_i2c.o(.text.I2C_SendSTOP) for I2C_SendSTOP
+    motor_control.o(.ARM.exidx.text.motor_control_write_mode) refers to motor_control.o(.text.motor_control_write_mode) for [Anonymous Symbol]
+    motor_control.o(.text.motor_control_write_state) refers to motor_control.o(.bss.motor2State) for motor2State
+    motor_control.o(.text.motor_control_write_state) refers to motor_control.o(.bss.motor1State) for motor1State
+    motor_control.o(.text.motor_control_write_state) refers to motor_control.o(.bss.motor1Mode) for motor1Mode
+    motor_control.o(.text.motor_control_write_state) refers to motor_control.o(.bss.motor2Mode) for motor2Mode
+    motor_control.o(.text.motor_control_write_state) refers to mdr32fxqi_i2c.o(.text.I2C_Send7bitAddress) for I2C_Send7bitAddress
+    motor_control.o(.text.motor_control_write_state) refers to motor_control.o(.text.I2C_packet_transfered) for I2C_packet_transfered
+    motor_control.o(.text.motor_control_write_state) refers to mdr32fxqi_i2c.o(.text.I2C_SendByte) for I2C_SendByte
+    motor_control.o(.text.motor_control_write_state) refers to mdr32fxqi_i2c.o(.text.I2C_SendSTOP) for I2C_SendSTOP
+    motor_control.o(.ARM.exidx.text.motor_control_write_state) refers to motor_control.o(.text.motor_control_write_state) for [Anonymous Symbol]
+    motor_control.o(.text.I2C_packet_transfered) refers to mdr32fxqi_i2c.o(.text.I2C_GetFlagStatus) for I2C_GetFlagStatus
+    motor_control.o(.ARM.exidx.text.I2C_packet_transfered) refers to motor_control.o(.text.I2C_packet_transfered) for [Anonymous Symbol]
+    portevent.o(.text.xMBPortEventInit) refers to portevent.o(.bss.xEventInQueue) for xEventInQueue
+    portevent.o(.ARM.exidx.text.xMBPortEventInit) refers to portevent.o(.text.xMBPortEventInit) for [Anonymous Symbol]
+    portevent.o(.text.xMBPortEventPost) refers to portevent.o(.bss.xEventInQueue) for xEventInQueue
+    portevent.o(.text.xMBPortEventPost) refers to portevent.o(.bss.eQueuedEvent) for eQueuedEvent
+    portevent.o(.ARM.exidx.text.xMBPortEventPost) refers to portevent.o(.text.xMBPortEventPost) for [Anonymous Symbol]
+    portevent.o(.text.xMBPortEventGet) refers to portevent.o(.bss.xEventInQueue) for xEventInQueue
+    portevent.o(.text.xMBPortEventGet) refers to portevent.o(.bss.eQueuedEvent) for eQueuedEvent
+    portevent.o(.ARM.exidx.text.xMBPortEventGet) refers to portevent.o(.text.xMBPortEventGet) for [Anonymous Symbol]
+    portserial.o(.text.vMBPortSerialEnable) refers to mdr32fxqi_uart.o(.text.UART_ITConfig) for UART_ITConfig
+    portserial.o(.text.vMBPortSerialEnable) refers to mdr32fxqi_uart.o(.text.UART_ClearITPendingBit) for UART_ClearITPendingBit
+    portserial.o(.ARM.exidx.text.vMBPortSerialEnable) refers to portserial.o(.text.vMBPortSerialEnable) for [Anonymous Symbol]
+    portserial.o(.text.xMBPortSerialInit) refers to mdr32fxqi_rst_clk.o(.text.RST_CLK_PCLKcmd) for RST_CLK_PCLKcmd
+    portserial.o(.text.xMBPortSerialInit) refers to portserial.o(.text.__PORT_Init) for __PORT_Init
+    portserial.o(.text.xMBPortSerialInit) refers to mdr32fxqi_uart.o(.text.UART_BRGInit) for UART_BRGInit
+    portserial.o(.text.xMBPortSerialInit) refers to mdr32fxqi_uart.o(.text.UART_Init) for UART_Init
+    portserial.o(.text.xMBPortSerialInit) refers to mdr32fxqi_uart.o(.text.UART_ITConfig) for UART_ITConfig
+    portserial.o(.text.xMBPortSerialInit) refers to portserial.o(.text.__NVIC_EnableIRQ) for __NVIC_EnableIRQ
+    portserial.o(.text.xMBPortSerialInit) refers to mdr32fxqi_uart.o(.text.UART_Cmd) for UART_Cmd
+    portserial.o(.ARM.exidx.text.xMBPortSerialInit) refers to portserial.o(.text.xMBPortSerialInit) for [Anonymous Symbol]
+    portserial.o(.ARM.exidx.text.__PORT_Init) refers to portserial.o(.text.__PORT_Init) for [Anonymous Symbol]
+    portserial.o(.ARM.exidx.text.__NVIC_EnableIRQ) refers to portserial.o(.text.__NVIC_EnableIRQ) for [Anonymous Symbol]
+    portserial.o(.text.xMBPortSerialPutByte) refers to mdr32fxqi_uart.o(.text.UART_GetFlagStatus) for UART_GetFlagStatus
+    portserial.o(.text.xMBPortSerialPutByte) refers to mdr32fxqi_uart.o(.text.UART_SendData) for UART_SendData
+    portserial.o(.ARM.exidx.text.xMBPortSerialPutByte) refers to portserial.o(.text.xMBPortSerialPutByte) for [Anonymous Symbol]
+    portserial.o(.text.xMBPortSerialGetByte) refers to mdr32fxqi_uart.o(.text.UART_ReceiveData) for UART_ReceiveData
+    portserial.o(.ARM.exidx.text.xMBPortSerialGetByte) refers to portserial.o(.text.xMBPortSerialGetByte) for [Anonymous Symbol]
+    portserial.o(.text.UART2_IRQHandler) refers to mdr32fxqi_uart.o(.text.UART_GetITStatus) for UART_GetITStatus
+    portserial.o(.text.UART2_IRQHandler) refers to portserial.o(.text.prvvUARTTxReadyISR) for prvvUARTTxReadyISR
+    portserial.o(.text.UART2_IRQHandler) refers to portserial.o(.text.prvvUARTRxISR) for prvvUARTRxISR
+    portserial.o(.ARM.exidx.text.UART2_IRQHandler) refers to portserial.o(.text.UART2_IRQHandler) for [Anonymous Symbol]
+    portserial.o(.text.prvvUARTTxReadyISR) refers to mb.o(.bss.pxMBFrameCBTransmitterEmpty) for pxMBFrameCBTransmitterEmpty
+    portserial.o(.ARM.exidx.text.prvvUARTTxReadyISR) refers to portserial.o(.text.prvvUARTTxReadyISR) for [Anonymous Symbol]
+    portserial.o(.text.prvvUARTRxISR) refers to mb.o(.bss.pxMBFrameCBByteReceived) for pxMBFrameCBByteReceived
+    portserial.o(.ARM.exidx.text.prvvUARTRxISR) refers to portserial.o(.text.prvvUARTRxISR) for [Anonymous Symbol]
+    porttimer.o(.text.xMBPortTimersInit) refers to mdr32fxqi_timer.o(.text.TIMER_DeInit) for TIMER_DeInit
+    porttimer.o(.text.xMBPortTimersInit) refers to mdr32fxqi_rst_clk.o(.text.RST_CLK_PCLKcmd) for RST_CLK_PCLKcmd
+    porttimer.o(.text.xMBPortTimersInit) refers to mdr32fxqi_timer.o(.text.TIMER_CntInit) for TIMER_CntInit
+    porttimer.o(.text.xMBPortTimersInit) refers to mdr32fxqi_timer.o(.text.TIMER_ITConfig) for TIMER_ITConfig
+    porttimer.o(.text.xMBPortTimersInit) refers to porttimer.o(.text.__NVIC_EnableIRQ) for __NVIC_EnableIRQ
+    porttimer.o(.text.xMBPortTimersInit) refers to mdr32fxqi_timer.o(.text.TIMER_BRGInit) for TIMER_BRGInit
+    porttimer.o(.ARM.exidx.text.xMBPortTimersInit) refers to porttimer.o(.text.xMBPortTimersInit) for [Anonymous Symbol]
+    porttimer.o(.ARM.exidx.text.__NVIC_EnableIRQ) refers to porttimer.o(.text.__NVIC_EnableIRQ) for [Anonymous Symbol]
+    porttimer.o(.text.vMBPortTimersEnable) refers to mdr32fxqi_timer.o(.text.TIMER_Cmd) for TIMER_Cmd
+    porttimer.o(.text.vMBPortTimersEnable) refers to mdr32fxqi_timer.o(.text.TIMER_SetCounter) for TIMER_SetCounter
+    porttimer.o(.ARM.exidx.text.vMBPortTimersEnable) refers to porttimer.o(.text.vMBPortTimersEnable) for [Anonymous Symbol]
+    porttimer.o(.text.vMBPortTimersDisable) refers to mdr32fxqi_timer.o(.text.TIMER_Cmd) for TIMER_Cmd
+    porttimer.o(.text.vMBPortTimersDisable) refers to mdr32fxqi_timer.o(.text.TIMER_SetCounter) for TIMER_SetCounter
+    porttimer.o(.ARM.exidx.text.vMBPortTimersDisable) refers to porttimer.o(.text.vMBPortTimersDisable) for [Anonymous Symbol]
+    porttimer.o(.text.Timer2_IRQHandler) refers to porttimer.o(.text.prvvTIMERExpiredISR) for prvvTIMERExpiredISR
+    porttimer.o(.ARM.exidx.text.Timer2_IRQHandler) refers to porttimer.o(.text.Timer2_IRQHandler) for [Anonymous Symbol]
+    porttimer.o(.text.prvvTIMERExpiredISR) refers to mb.o(.bss.pxMBPortCBTimerExpired) for pxMBPortCBTimerExpired
+    porttimer.o(.ARM.exidx.text.prvvTIMERExpiredISR) refers to porttimer.o(.text.prvvTIMERExpiredISR) for [Anonymous Symbol]
+    uart.o(.text.sendStringUART) refers to mdr32fxqi_uart.o(.text.UART_GetFlagStatus) for UART_GetFlagStatus
+    uart.o(.text.sendStringUART) refers to mdr32fxqi_uart.o(.text.UART_SendData) for UART_SendData
+    uart.o(.ARM.exidx.text.sendStringUART) refers to uart.o(.text.sendStringUART) for [Anonymous Symbol]
+    startup_mdr32f9q2i.o(STACK) refers (Special) to heapauxi.o(.text) for __use_two_region_memory
+    startup_mdr32f9q2i.o(HEAP) refers (Special) to heapauxi.o(.text) for __use_two_region_memory
+    startup_mdr32f9q2i.o(RESET) refers (Special) to heapauxi.o(.text) for __use_two_region_memory
+    startup_mdr32f9q2i.o(RESET) refers to startup_mdr32f9q2i.o(STACK) for __initial_sp
+    startup_mdr32f9q2i.o(RESET) refers to startup_mdr32f9q2i.o(.text) for Reset_Handler
+    startup_mdr32f9q2i.o(RESET) refers to clock.o(.text.SysTick_Handler) for SysTick_Handler
+    startup_mdr32f9q2i.o(RESET) refers to portserial.o(.text.UART2_IRQHandler) for UART2_IRQHandler
+    startup_mdr32f9q2i.o(RESET) refers to porttimer.o(.text.Timer2_IRQHandler) for Timer2_IRQHandler
+    startup_mdr32f9q2i.o(.text) refers (Special) to heapauxi.o(.text) for __use_two_region_memory
+    startup_mdr32f9q2i.o(.text) refers to system_mdr32f9q2i.o(.text.SystemInit) for SystemInit
+    startup_mdr32f9q2i.o(.text) refers to __main.o(!!!main) for __main
+    startup_mdr32f9q2i.o(.text) refers to startup_mdr32f9q2i.o(HEAP) for Heap_Mem
+    startup_mdr32f9q2i.o(.text) refers to startup_mdr32f9q2i.o(STACK) for Stack_Mem
+    system_mdr32f9q2i.o(.text.SystemCoreClockUpdate) refers to system_mdr32f9q2i.o(.data.SystemCoreClock) for SystemCoreClock
+    system_mdr32f9q2i.o(.ARM.exidx.text.SystemCoreClockUpdate) refers to system_mdr32f9q2i.o(.text.SystemCoreClockUpdate) for [Anonymous Symbol]
+    system_mdr32f9q2i.o(.text.SystemInit) refers to system_mdr32f9q2i.o(.text.SystemCoreClockUpdate) for SystemCoreClockUpdate
+    system_mdr32f9q2i.o(.ARM.exidx.text.SystemInit) refers to system_mdr32f9q2i.o(.text.SystemInit) for [Anonymous Symbol]
+    mdr32fxqi_port.o(.ARM.exidx.text.PORT_DeInit) refers to mdr32fxqi_port.o(.text.PORT_DeInit) for [Anonymous Symbol]
+    mdr32fxqi_port.o(.ARM.exidx.text.PORT_Init) refers to mdr32fxqi_port.o(.text.PORT_Init) for [Anonymous Symbol]
+    mdr32fxqi_port.o(.ARM.exidx.text.PORT_StructInit) refers to mdr32fxqi_port.o(.text.PORT_StructInit) for [Anonymous Symbol]
+    mdr32fxqi_port.o(.ARM.exidx.text.PORT_ReadInputDataBit) refers to mdr32fxqi_port.o(.text.PORT_ReadInputDataBit) for [Anonymous Symbol]
+    mdr32fxqi_port.o(.ARM.exidx.text.PORT_ReadInputData) refers to mdr32fxqi_port.o(.text.PORT_ReadInputData) for [Anonymous Symbol]
+    mdr32fxqi_port.o(.ARM.exidx.text.PORT_SetBits) refers to mdr32fxqi_port.o(.text.PORT_SetBits) for [Anonymous Symbol]
+    mdr32fxqi_port.o(.ARM.exidx.text.PORT_ResetBits) refers to mdr32fxqi_port.o(.text.PORT_ResetBits) for [Anonymous Symbol]
+    mdr32fxqi_port.o(.ARM.exidx.text.PORT_WriteBit) refers to mdr32fxqi_port.o(.text.PORT_WriteBit) for [Anonymous Symbol]
+    mdr32fxqi_port.o(.ARM.exidx.text.PORT_Write) refers to mdr32fxqi_port.o(.text.PORT_Write) for [Anonymous Symbol]
+    mdr32fxqi_rst_clk.o(.text.RST_CLK_DeInit) refers to mdr32fxqi_rst_clk.o(.text.RST_CLK_WarmDeInit) for RST_CLK_WarmDeInit
+    mdr32fxqi_rst_clk.o(.text.RST_CLK_DeInit) refers to mdr32fxqi_rst_clk.o(.text.RST_CLK_PCLKcmd) for RST_CLK_PCLKcmd
+    mdr32fxqi_rst_clk.o(.ARM.exidx.text.RST_CLK_DeInit) refers to mdr32fxqi_rst_clk.o(.text.RST_CLK_DeInit) for [Anonymous Symbol]
+    mdr32fxqi_rst_clk.o(.text.RST_CLK_WarmDeInit) refers to mdr32fxqi_rst_clk.o(.text.RST_CLK_HSIcmd) for RST_CLK_HSIcmd
+    mdr32fxqi_rst_clk.o(.text.RST_CLK_WarmDeInit) refers to mdr32fxqi_rst_clk.o(.text.RST_CLK_HSIstatus) for RST_CLK_HSIstatus
+    mdr32fxqi_rst_clk.o(.text.RST_CLK_WarmDeInit) refers to mdr32fxqi_rst_clk.o(.text.RST_CLK_CPUclkSelection) for RST_CLK_CPUclkSelection
+    mdr32fxqi_rst_clk.o(.ARM.exidx.text.RST_CLK_WarmDeInit) refers to mdr32fxqi_rst_clk.o(.text.RST_CLK_WarmDeInit) for [Anonymous Symbol]
+    mdr32fxqi_rst_clk.o(.ARM.exidx.text.RST_CLK_PCLKcmd) refers to mdr32fxqi_rst_clk.o(.text.RST_CLK_PCLKcmd) for [Anonymous Symbol]
+    mdr32fxqi_rst_clk.o(.ARM.exidx.text.RST_CLK_HSIcmd) refers to mdr32fxqi_rst_clk.o(.text.RST_CLK_HSIcmd) for [Anonymous Symbol]
+    mdr32fxqi_rst_clk.o(.text.RST_CLK_HSIstatus) refers to mdr32fxqi_rst_clk.o(.text.RST_CLK_GetFlagStatus) for RST_CLK_GetFlagStatus
+    mdr32fxqi_rst_clk.o(.ARM.exidx.text.RST_CLK_HSIstatus) refers to mdr32fxqi_rst_clk.o(.text.RST_CLK_HSIstatus) for [Anonymous Symbol]
+    mdr32fxqi_rst_clk.o(.ARM.exidx.text.RST_CLK_CPUclkSelection) refers to mdr32fxqi_rst_clk.o(.text.RST_CLK_CPUclkSelection) for [Anonymous Symbol]
+    mdr32fxqi_rst_clk.o(.ARM.exidx.text.RST_CLK_HSEconfig) refers to mdr32fxqi_rst_clk.o(.text.RST_CLK_HSEconfig) for [Anonymous Symbol]
+    mdr32fxqi_rst_clk.o(.text.RST_CLK_HSEstatus) refers to mdr32fxqi_rst_clk.o(.text.RST_CLK_GetFlagStatus) for RST_CLK_GetFlagStatus
+    mdr32fxqi_rst_clk.o(.ARM.exidx.text.RST_CLK_HSEstatus) refers to mdr32fxqi_rst_clk.o(.text.RST_CLK_HSEstatus) for [Anonymous Symbol]
+    mdr32fxqi_rst_clk.o(.ARM.exidx.text.RST_CLK_GetFlagStatus) refers to mdr32fxqi_rst_clk.o(.text.RST_CLK_GetFlagStatus) for [Anonymous Symbol]
+    mdr32fxqi_rst_clk.o(.ARM.exidx.text.RST_CLK_LSEconfig) refers to mdr32fxqi_rst_clk.o(.text.RST_CLK_LSEconfig) for [Anonymous Symbol]
+    mdr32fxqi_rst_clk.o(.text.RST_CLK_LSEstatus) refers to mdr32fxqi_rst_clk.o(.text.RST_CLK_GetFlagStatus) for RST_CLK_GetFlagStatus
+    mdr32fxqi_rst_clk.o(.ARM.exidx.text.RST_CLK_LSEstatus) refers to mdr32fxqi_rst_clk.o(.text.RST_CLK_LSEstatus) for [Anonymous Symbol]
+    mdr32fxqi_rst_clk.o(.ARM.exidx.text.RST_CLK_HSIadjust) refers to mdr32fxqi_rst_clk.o(.text.RST_CLK_HSIadjust) for [Anonymous Symbol]
+    mdr32fxqi_rst_clk.o(.ARM.exidx.text.RST_CLK_LSIcmd) refers to mdr32fxqi_rst_clk.o(.text.RST_CLK_LSIcmd) for [Anonymous Symbol]
+    mdr32fxqi_rst_clk.o(.ARM.exidx.text.RST_CLK_LSIadjust) refers to mdr32fxqi_rst_clk.o(.text.RST_CLK_LSIadjust) for [Anonymous Symbol]
+    mdr32fxqi_rst_clk.o(.text.RST_CLK_LSIstatus) refers to mdr32fxqi_rst_clk.o(.text.RST_CLK_GetFlagStatus) for RST_CLK_GetFlagStatus
+    mdr32fxqi_rst_clk.o(.ARM.exidx.text.RST_CLK_LSIstatus) refers to mdr32fxqi_rst_clk.o(.text.RST_CLK_LSIstatus) for [Anonymous Symbol]
+    mdr32fxqi_rst_clk.o(.ARM.exidx.text.RST_CLK_CPU_PLLconfig) refers to mdr32fxqi_rst_clk.o(.text.RST_CLK_CPU_PLLconfig) for [Anonymous Symbol]
+    mdr32fxqi_rst_clk.o(.ARM.exidx.text.RST_CLK_CPU_PLLuse) refers to mdr32fxqi_rst_clk.o(.text.RST_CLK_CPU_PLLuse) for [Anonymous Symbol]
+    mdr32fxqi_rst_clk.o(.ARM.exidx.text.RST_CLK_CPU_PLLcmd) refers to mdr32fxqi_rst_clk.o(.text.RST_CLK_CPU_PLLcmd) for [Anonymous Symbol]
+    mdr32fxqi_rst_clk.o(.text.RST_CLK_CPU_PLLstatus) refers to mdr32fxqi_rst_clk.o(.text.RST_CLK_GetFlagStatus) for RST_CLK_GetFlagStatus
+    mdr32fxqi_rst_clk.o(.ARM.exidx.text.RST_CLK_CPU_PLLstatus) refers to mdr32fxqi_rst_clk.o(.text.RST_CLK_CPU_PLLstatus) for [Anonymous Symbol]
+    mdr32fxqi_rst_clk.o(.ARM.exidx.text.RST_CLK_CPUclkPrescaler) refers to mdr32fxqi_rst_clk.o(.text.RST_CLK_CPUclkPrescaler) for [Anonymous Symbol]
+    mdr32fxqi_rst_clk.o(.ARM.exidx.text.RST_CLK_USB_PLLconfig) refers to mdr32fxqi_rst_clk.o(.text.RST_CLK_USB_PLLconfig) for [Anonymous Symbol]
+    mdr32fxqi_rst_clk.o(.ARM.exidx.text.RST_CLK_USB_PLLuse) refers to mdr32fxqi_rst_clk.o(.text.RST_CLK_USB_PLLuse) for [Anonymous Symbol]
+    mdr32fxqi_rst_clk.o(.ARM.exidx.text.RST_CLK_USB_PLLcmd) refers to mdr32fxqi_rst_clk.o(.text.RST_CLK_USB_PLLcmd) for [Anonymous Symbol]
+    mdr32fxqi_rst_clk.o(.text.RST_CLK_USB_PLLstatus) refers to mdr32fxqi_rst_clk.o(.text.RST_CLK_GetFlagStatus) for RST_CLK_GetFlagStatus
+    mdr32fxqi_rst_clk.o(.ARM.exidx.text.RST_CLK_USB_PLLstatus) refers to mdr32fxqi_rst_clk.o(.text.RST_CLK_USB_PLLstatus) for [Anonymous Symbol]
+    mdr32fxqi_rst_clk.o(.ARM.exidx.text.RST_CLK_USBclkPrescaler) refers to mdr32fxqi_rst_clk.o(.text.RST_CLK_USBclkPrescaler) for [Anonymous Symbol]
+    mdr32fxqi_rst_clk.o(.ARM.exidx.text.RST_CLK_USBclkEnable) refers to mdr32fxqi_rst_clk.o(.text.RST_CLK_USBclkEnable) for [Anonymous Symbol]
+    mdr32fxqi_rst_clk.o(.ARM.exidx.text.RST_CLK_ADCclkSelection) refers to mdr32fxqi_rst_clk.o(.text.RST_CLK_ADCclkSelection) for [Anonymous Symbol]
+    mdr32fxqi_rst_clk.o(.ARM.exidx.text.RST_CLK_ADCclkPrescaler) refers to mdr32fxqi_rst_clk.o(.text.RST_CLK_ADCclkPrescaler) for [Anonymous Symbol]
+    mdr32fxqi_rst_clk.o(.ARM.exidx.text.RST_CLK_ADCclkEnable) refers to mdr32fxqi_rst_clk.o(.text.RST_CLK_ADCclkEnable) for [Anonymous Symbol]
+    mdr32fxqi_rst_clk.o(.ARM.exidx.text.RST_CLK_HSIclkPrescaler) refers to mdr32fxqi_rst_clk.o(.text.RST_CLK_HSIclkPrescaler) for [Anonymous Symbol]
+    mdr32fxqi_rst_clk.o(.ARM.exidx.text.RST_CLK_RTC_HSIclkEnable) refers to mdr32fxqi_rst_clk.o(.text.RST_CLK_RTC_HSIclkEnable) for [Anonymous Symbol]
+    mdr32fxqi_rst_clk.o(.ARM.exidx.text.RST_CLK_HSEclkPrescaler) refers to mdr32fxqi_rst_clk.o(.text.RST_CLK_HSEclkPrescaler) for [Anonymous Symbol]
+    mdr32fxqi_rst_clk.o(.ARM.exidx.text.RST_CLK_RTC_HSEclkEnable) refers to mdr32fxqi_rst_clk.o(.text.RST_CLK_RTC_HSEclkEnable) for [Anonymous Symbol]
+    mdr32fxqi_rst_clk.o(.ARM.exidx.text.RST_CLK_CPUclkSelectionC1) refers to mdr32fxqi_rst_clk.o(.text.RST_CLK_CPUclkSelectionC1) for [Anonymous Symbol]
+    mdr32fxqi_rst_clk.o(.ARM.exidx.text.RST_CLK_GetClocksFreq) refers to mdr32fxqi_rst_clk.o(.text.RST_CLK_GetClocksFreq) for [Anonymous Symbol]
+    mdr32fxqi_timer.o(.ARM.exidx.text.TIMER_DeInit) refers to mdr32fxqi_timer.o(.text.TIMER_DeInit) for [Anonymous Symbol]
+    mdr32fxqi_timer.o(.ARM.exidx.text.TIMER_CntInit) refers to mdr32fxqi_timer.o(.text.TIMER_CntInit) for [Anonymous Symbol]
+    mdr32fxqi_timer.o(.ARM.exidx.text.TIMER_CntStructInit) refers to mdr32fxqi_timer.o(.text.TIMER_CntStructInit) for [Anonymous Symbol]
+    mdr32fxqi_timer.o(.ARM.exidx.text.TIMER_Cmd) refers to mdr32fxqi_timer.o(.text.TIMER_Cmd) for [Anonymous Symbol]
+    mdr32fxqi_timer.o(.ARM.exidx.text.TIMER_SetCounter) refers to mdr32fxqi_timer.o(.text.TIMER_SetCounter) for [Anonymous Symbol]
+    mdr32fxqi_timer.o(.ARM.exidx.text.TIMER_GetCounter) refers to mdr32fxqi_timer.o(.text.TIMER_GetCounter) for [Anonymous Symbol]
+    mdr32fxqi_timer.o(.ARM.exidx.text.TIMER_SetCntPrescaler) refers to mdr32fxqi_timer.o(.text.TIMER_SetCntPrescaler) for [Anonymous Symbol]
+    mdr32fxqi_timer.o(.ARM.exidx.text.TIMER_GetCntPrescaler) refers to mdr32fxqi_timer.o(.text.TIMER_GetCntPrescaler) for [Anonymous Symbol]
+    mdr32fxqi_timer.o(.ARM.exidx.text.TIMER_SetCntAutoreload) refers to mdr32fxqi_timer.o(.text.TIMER_SetCntAutoreload) for [Anonymous Symbol]
+    mdr32fxqi_timer.o(.ARM.exidx.text.TIMER_CntAutoreloadConfig) refers to mdr32fxqi_timer.o(.text.TIMER_CntAutoreloadConfig) for [Anonymous Symbol]
+    mdr32fxqi_timer.o(.ARM.exidx.text.TIMER_GetCntAutoreload) refers to mdr32fxqi_timer.o(.text.TIMER_GetCntAutoreload) for [Anonymous Symbol]
+    mdr32fxqi_timer.o(.ARM.exidx.text.TIMER_CntEventSourceConfig) refers to mdr32fxqi_timer.o(.text.TIMER_CntEventSourceConfig) for [Anonymous Symbol]
+    mdr32fxqi_timer.o(.ARM.exidx.text.TIMER_FilterSamplingConfig) refers to mdr32fxqi_timer.o(.text.TIMER_FilterSamplingConfig) for [Anonymous Symbol]
+    mdr32fxqi_timer.o(.ARM.exidx.text.TIMER_CounterModeConfig) refers to mdr32fxqi_timer.o(.text.TIMER_CounterModeConfig) for [Anonymous Symbol]
+    mdr32fxqi_timer.o(.ARM.exidx.text.TIMER_SetCounterDirection) refers to mdr32fxqi_timer.o(.text.TIMER_SetCounterDirection) for [Anonymous Symbol]
+    mdr32fxqi_timer.o(.ARM.exidx.text.TIMER_ETRInputConfig) refers to mdr32fxqi_timer.o(.text.TIMER_ETRInputConfig) for [Anonymous Symbol]
+    mdr32fxqi_timer.o(.ARM.exidx.text.TIMER_ETRFilterConfig) refers to mdr32fxqi_timer.o(.text.TIMER_ETRFilterConfig) for [Anonymous Symbol]
+    mdr32fxqi_timer.o(.ARM.exidx.text.TIMER_ETRPrescalerConfig) refers to mdr32fxqi_timer.o(.text.TIMER_ETRPrescalerConfig) for [Anonymous Symbol]
+    mdr32fxqi_timer.o(.ARM.exidx.text.TIMER_ETRPolarityConfig) refers to mdr32fxqi_timer.o(.text.TIMER_ETRPolarityConfig) for [Anonymous Symbol]
+    mdr32fxqi_timer.o(.ARM.exidx.text.TIMER_BRKPolarityConfig) refers to mdr32fxqi_timer.o(.text.TIMER_BRKPolarityConfig) for [Anonymous Symbol]
+    mdr32fxqi_timer.o(.ARM.exidx.text.TIMER_GetCounterDirection) refers to mdr32fxqi_timer.o(.text.TIMER_GetCounterDirection) for [Anonymous Symbol]
+    mdr32fxqi_timer.o(.ARM.exidx.text.TIMER_GetCntWriteComplete) refers to mdr32fxqi_timer.o(.text.TIMER_GetCntWriteComplete) for [Anonymous Symbol]
+    mdr32fxqi_timer.o(.ARM.exidx.text.TIMER_ChnInit) refers to mdr32fxqi_timer.o(.text.TIMER_ChnInit) for [Anonymous Symbol]
+    mdr32fxqi_timer.o(.ARM.exidx.text.TIMER_ChnStructInit) refers to mdr32fxqi_timer.o(.text.TIMER_ChnStructInit) for [Anonymous Symbol]
+    mdr32fxqi_timer.o(.ARM.exidx.text.TIMER_SetChnCompare) refers to mdr32fxqi_timer.o(.text.TIMER_SetChnCompare) for [Anonymous Symbol]
+    mdr32fxqi_timer.o(.ARM.exidx.text.TIMER_ChnCompareConfig) refers to mdr32fxqi_timer.o(.text.TIMER_ChnCompareConfig) for [Anonymous Symbol]
+    mdr32fxqi_timer.o(.ARM.exidx.text.TIMER_GetChnCapture) refers to mdr32fxqi_timer.o(.text.TIMER_GetChnCapture) for [Anonymous Symbol]
+    mdr32fxqi_timer.o(.ARM.exidx.text.TIMER_SetChnCompare1) refers to mdr32fxqi_timer.o(.text.TIMER_SetChnCompare1) for [Anonymous Symbol]
+    mdr32fxqi_timer.o(.ARM.exidx.text.TIMER_ChnCompare1Config) refers to mdr32fxqi_timer.o(.text.TIMER_ChnCompare1Config) for [Anonymous Symbol]
+    mdr32fxqi_timer.o(.ARM.exidx.text.TIMER_GetChnCapture1) refers to mdr32fxqi_timer.o(.text.TIMER_GetChnCapture1) for [Anonymous Symbol]
+    mdr32fxqi_timer.o(.ARM.exidx.text.TIMER_ChnETR_Cmd) refers to mdr32fxqi_timer.o(.text.TIMER_ChnETR_Cmd) for [Anonymous Symbol]
+    mdr32fxqi_timer.o(.ARM.exidx.text.TIMER_ChnETRResetConfig) refers to mdr32fxqi_timer.o(.text.TIMER_ChnETRResetConfig) for [Anonymous Symbol]
+    mdr32fxqi_timer.o(.ARM.exidx.text.TIMER_ChnBRKResetConfig) refers to mdr32fxqi_timer.o(.text.TIMER_ChnBRKResetConfig) for [Anonymous Symbol]
+    mdr32fxqi_timer.o(.ARM.exidx.text.TIMER_ChnREFFormatConfig) refers to mdr32fxqi_timer.o(.text.TIMER_ChnREFFormatConfig) for [Anonymous Symbol]
+    mdr32fxqi_timer.o(.ARM.exidx.text.TIMER_ChnCapturePrescalerConfig) refers to mdr32fxqi_timer.o(.text.TIMER_ChnCapturePrescalerConfig) for [Anonymous Symbol]
+    mdr32fxqi_timer.o(.ARM.exidx.text.TIMER_ChnEventSourceConfig) refers to mdr32fxqi_timer.o(.text.TIMER_ChnEventSourceConfig) for [Anonymous Symbol]
+    mdr32fxqi_timer.o(.ARM.exidx.text.TIMER_ChnFilterConfig) refers to mdr32fxqi_timer.o(.text.TIMER_ChnFilterConfig) for [Anonymous Symbol]
+    mdr32fxqi_timer.o(.ARM.exidx.text.TIMER_GetChnWriteComplete) refers to mdr32fxqi_timer.o(.text.TIMER_GetChnWriteComplete) for [Anonymous Symbol]
+    mdr32fxqi_timer.o(.ARM.exidx.text.TIMER_ChnCCR1_EventSourceConfig) refers to mdr32fxqi_timer.o(.text.TIMER_ChnCCR1_EventSourceConfig) for [Anonymous Symbol]
+    mdr32fxqi_timer.o(.ARM.exidx.text.TIMER_ChnCCR1_Cmd) refers to mdr32fxqi_timer.o(.text.TIMER_ChnCCR1_Cmd) for [Anonymous Symbol]
+    mdr32fxqi_timer.o(.ARM.exidx.text.TIMER_ChnOutInit) refers to mdr32fxqi_timer.o(.text.TIMER_ChnOutInit) for [Anonymous Symbol]
+    mdr32fxqi_timer.o(.ARM.exidx.text.TIMER_ChnOutStructInit) refers to mdr32fxqi_timer.o(.text.TIMER_ChnOutStructInit) for [Anonymous Symbol]
+    mdr32fxqi_timer.o(.ARM.exidx.text.TIMER_ChnOutConfig) refers to mdr32fxqi_timer.o(.text.TIMER_ChnOutConfig) for [Anonymous Symbol]
+    mdr32fxqi_timer.o(.ARM.exidx.text.TIMER_ChnOutSourceConfig) refers to mdr32fxqi_timer.o(.text.TIMER_ChnOutSourceConfig) for [Anonymous Symbol]
+    mdr32fxqi_timer.o(.ARM.exidx.text.TIMER_ChnOutModeConfig) refers to mdr32fxqi_timer.o(.text.TIMER_ChnOutModeConfig) for [Anonymous Symbol]
+    mdr32fxqi_timer.o(.ARM.exidx.text.TIMER_ChnOutPolarityConfig) refers to mdr32fxqi_timer.o(.text.TIMER_ChnOutPolarityConfig) for [Anonymous Symbol]
+    mdr32fxqi_timer.o(.ARM.exidx.text.TIMER_ChnNOutConfig) refers to mdr32fxqi_timer.o(.text.TIMER_ChnNOutConfig) for [Anonymous Symbol]
+    mdr32fxqi_timer.o(.ARM.exidx.text.TIMER_ChnNOutSourceConfig) refers to mdr32fxqi_timer.o(.text.TIMER_ChnNOutSourceConfig) for [Anonymous Symbol]
+    mdr32fxqi_timer.o(.ARM.exidx.text.TIMER_ChnNOutModeConfig) refers to mdr32fxqi_timer.o(.text.TIMER_ChnNOutModeConfig) for [Anonymous Symbol]
+    mdr32fxqi_timer.o(.ARM.exidx.text.TIMER_ChnNOutPolarityConfig) refers to mdr32fxqi_timer.o(.text.TIMER_ChnNOutPolarityConfig) for [Anonymous Symbol]
+    mdr32fxqi_timer.o(.ARM.exidx.text.TIMER_ChnOutDTGConfig) refers to mdr32fxqi_timer.o(.text.TIMER_ChnOutDTGConfig) for [Anonymous Symbol]
+    mdr32fxqi_timer.o(.ARM.exidx.text.TIMER_GetStatus) refers to mdr32fxqi_timer.o(.text.TIMER_GetStatus) for [Anonymous Symbol]
+    mdr32fxqi_timer.o(.ARM.exidx.text.TIMER_GetFlagStatus) refers to mdr32fxqi_timer.o(.text.TIMER_GetFlagStatus) for [Anonymous Symbol]
+    mdr32fxqi_timer.o(.ARM.exidx.text.TIMER_ClearFlag) refers to mdr32fxqi_timer.o(.text.TIMER_ClearFlag) for [Anonymous Symbol]
+    mdr32fxqi_timer.o(.ARM.exidx.text.TIMER_DMACmd) refers to mdr32fxqi_timer.o(.text.TIMER_DMACmd) for [Anonymous Symbol]
+    mdr32fxqi_timer.o(.ARM.exidx.text.TIMER_ITConfig) refers to mdr32fxqi_timer.o(.text.TIMER_ITConfig) for [Anonymous Symbol]
+    mdr32fxqi_timer.o(.ARM.exidx.text.TIMER_GetITStatus) refers to mdr32fxqi_timer.o(.text.TIMER_GetITStatus) for [Anonymous Symbol]
+    mdr32fxqi_timer.o(.ARM.exidx.text.TIMER_BRGInit) refers to mdr32fxqi_timer.o(.text.TIMER_BRGInit) for [Anonymous Symbol]
+    mdr32fxqi_uart.o(.ARM.exidx.text.UART_DeInit) refers to mdr32fxqi_uart.o(.text.UART_DeInit) for [Anonymous Symbol]
+    mdr32fxqi_uart.o(.text.UART_Init) refers to mdr32fxqi_rst_clk.o(.text.RST_CLK_GetClocksFreq) for RST_CLK_GetClocksFreq
+    mdr32fxqi_uart.o(.ARM.exidx.text.UART_Init) refers to mdr32fxqi_uart.o(.text.UART_Init) for [Anonymous Symbol]
+    mdr32fxqi_uart.o(.ARM.exidx.text.UART_StructInit) refers to mdr32fxqi_uart.o(.text.UART_StructInit) for [Anonymous Symbol]
+    mdr32fxqi_uart.o(.ARM.exidx.text.UART_Cmd) refers to mdr32fxqi_uart.o(.text.UART_Cmd) for [Anonymous Symbol]
+    mdr32fxqi_uart.o(.ARM.exidx.text.UART_ITConfig) refers to mdr32fxqi_uart.o(.text.UART_ITConfig) for [Anonymous Symbol]
+    mdr32fxqi_uart.o(.ARM.exidx.text.UART_GetITStatus) refers to mdr32fxqi_uart.o(.text.UART_GetITStatus) for [Anonymous Symbol]
+    mdr32fxqi_uart.o(.ARM.exidx.text.UART_GetITStatusMasked) refers to mdr32fxqi_uart.o(.text.UART_GetITStatusMasked) for [Anonymous Symbol]
+    mdr32fxqi_uart.o(.ARM.exidx.text.UART_ClearITPendingBit) refers to mdr32fxqi_uart.o(.text.UART_ClearITPendingBit) for [Anonymous Symbol]
+    mdr32fxqi_uart.o(.ARM.exidx.text.UART_DMAConfig) refers to mdr32fxqi_uart.o(.text.UART_DMAConfig) for [Anonymous Symbol]
+    mdr32fxqi_uart.o(.ARM.exidx.text.UART_DMACmd) refers to mdr32fxqi_uart.o(.text.UART_DMACmd) for [Anonymous Symbol]
+    mdr32fxqi_uart.o(.ARM.exidx.text.UART_SendData) refers to mdr32fxqi_uart.o(.text.UART_SendData) for [Anonymous Symbol]
+    mdr32fxqi_uart.o(.ARM.exidx.text.UART_ReceiveData) refers to mdr32fxqi_uart.o(.text.UART_ReceiveData) for [Anonymous Symbol]
+    mdr32fxqi_uart.o(.ARM.exidx.text.UART_BreakLine) refers to mdr32fxqi_uart.o(.text.UART_BreakLine) for [Anonymous Symbol]
+    mdr32fxqi_uart.o(.text.UART_IrDAConfig) refers to mdr32fxqi_rst_clk.o(.text.RST_CLK_GetClocksFreq) for RST_CLK_GetClocksFreq
+    mdr32fxqi_uart.o(.ARM.exidx.text.UART_IrDAConfig) refers to mdr32fxqi_uart.o(.text.UART_IrDAConfig) for [Anonymous Symbol]
+    mdr32fxqi_uart.o(.ARM.exidx.text.UART_IrDACmd) refers to mdr32fxqi_uart.o(.text.UART_IrDACmd) for [Anonymous Symbol]
+    mdr32fxqi_uart.o(.ARM.exidx.text.UART_GetFlagStatus) refers to mdr32fxqi_uart.o(.text.UART_GetFlagStatus) for [Anonymous Symbol]
+    mdr32fxqi_uart.o(.ARM.exidx.text.UART_BRGInit) refers to mdr32fxqi_uart.o(.text.UART_BRGInit) for [Anonymous Symbol]
+    mdr32fxqi_ssp.o(.ARM.exidx.text.SSP_DeInit) refers to mdr32fxqi_ssp.o(.text.SSP_DeInit) for [Anonymous Symbol]
+    mdr32fxqi_ssp.o(.ARM.exidx.text.SSP_Init) refers to mdr32fxqi_ssp.o(.text.SSP_Init) for [Anonymous Symbol]
+    mdr32fxqi_ssp.o(.ARM.exidx.text.SSP_StructInit) refers to mdr32fxqi_ssp.o(.text.SSP_StructInit) for [Anonymous Symbol]
+    mdr32fxqi_ssp.o(.ARM.exidx.text.SSP_Cmd) refers to mdr32fxqi_ssp.o(.text.SSP_Cmd) for [Anonymous Symbol]
+    mdr32fxqi_ssp.o(.ARM.exidx.text.SSP_ITConfig) refers to mdr32fxqi_ssp.o(.text.SSP_ITConfig) for [Anonymous Symbol]
+    mdr32fxqi_ssp.o(.ARM.exidx.text.SSP_GetITStatus) refers to mdr32fxqi_ssp.o(.text.SSP_GetITStatus) for [Anonymous Symbol]
+    mdr32fxqi_ssp.o(.ARM.exidx.text.SSP_GetITStatusMasked) refers to mdr32fxqi_ssp.o(.text.SSP_GetITStatusMasked) for [Anonymous Symbol]
+    mdr32fxqi_ssp.o(.ARM.exidx.text.SSP_ClearITPendingBit) refers to mdr32fxqi_ssp.o(.text.SSP_ClearITPendingBit) for [Anonymous Symbol]
+    mdr32fxqi_ssp.o(.ARM.exidx.text.SSP_DMACmd) refers to mdr32fxqi_ssp.o(.text.SSP_DMACmd) for [Anonymous Symbol]
+    mdr32fxqi_ssp.o(.ARM.exidx.text.SSP_SendData) refers to mdr32fxqi_ssp.o(.text.SSP_SendData) for [Anonymous Symbol]
+    mdr32fxqi_ssp.o(.ARM.exidx.text.SSP_ReceiveData) refers to mdr32fxqi_ssp.o(.text.SSP_ReceiveData) for [Anonymous Symbol]
+    mdr32fxqi_ssp.o(.ARM.exidx.text.SSP_GetFlagStatus) refers to mdr32fxqi_ssp.o(.text.SSP_GetFlagStatus) for [Anonymous Symbol]
+    mdr32fxqi_ssp.o(.ARM.exidx.text.SSP_BRGInit) refers to mdr32fxqi_ssp.o(.text.SSP_BRGInit) for [Anonymous Symbol]
+    mdr32fxqi_i2c.o(.ARM.exidx.text.I2C_DeInit) refers to mdr32fxqi_i2c.o(.text.I2C_DeInit) for [Anonymous Symbol]
+    mdr32fxqi_i2c.o(.ARM.exidx.text.I2C_Init) refers to mdr32fxqi_i2c.o(.text.I2C_Init) for [Anonymous Symbol]
+    mdr32fxqi_i2c.o(.ARM.exidx.text.I2C_StructInit) refers to mdr32fxqi_i2c.o(.text.I2C_StructInit) for [Anonymous Symbol]
+    mdr32fxqi_i2c.o(.ARM.exidx.text.I2C_Cmd) refers to mdr32fxqi_i2c.o(.text.I2C_Cmd) for [Anonymous Symbol]
+    mdr32fxqi_i2c.o(.ARM.exidx.text.I2C_ITConfig) refers to mdr32fxqi_i2c.o(.text.I2C_ITConfig) for [Anonymous Symbol]
+    mdr32fxqi_i2c.o(.ARM.exidx.text.I2C_GetITStatus) refers to mdr32fxqi_i2c.o(.text.I2C_GetITStatus) for [Anonymous Symbol]
+    mdr32fxqi_i2c.o(.ARM.exidx.text.I2C_ClearITPendingBit) refers to mdr32fxqi_i2c.o(.text.I2C_ClearITPendingBit) for [Anonymous Symbol]
+    mdr32fxqi_i2c.o(.ARM.exidx.text.I2C_Send7bitAddress) refers to mdr32fxqi_i2c.o(.text.I2C_Send7bitAddress) for [Anonymous Symbol]
+    mdr32fxqi_i2c.o(.ARM.exidx.text.I2C_SendByte) refers to mdr32fxqi_i2c.o(.text.I2C_SendByte) for [Anonymous Symbol]
+    mdr32fxqi_i2c.o(.ARM.exidx.text.I2C_SendSTOP) refers to mdr32fxqi_i2c.o(.text.I2C_SendSTOP) for [Anonymous Symbol]
+    mdr32fxqi_i2c.o(.ARM.exidx.text.I2C_StartReceiveData) refers to mdr32fxqi_i2c.o(.text.I2C_StartReceiveData) for [Anonymous Symbol]
+    mdr32fxqi_i2c.o(.ARM.exidx.text.I2C_GetReceivedData) refers to mdr32fxqi_i2c.o(.text.I2C_GetReceivedData) for [Anonymous Symbol]
+    mdr32fxqi_i2c.o(.text.I2C_CheckEvent) refers to mdr32fxqi_i2c.o(.text.I2C_GetLastEvent) for I2C_GetLastEvent
+    mdr32fxqi_i2c.o(.ARM.exidx.text.I2C_CheckEvent) refers to mdr32fxqi_i2c.o(.text.I2C_CheckEvent) for [Anonymous Symbol]
+    mdr32fxqi_i2c.o(.ARM.exidx.text.I2C_GetLastEvent) refers to mdr32fxqi_i2c.o(.text.I2C_GetLastEvent) for [Anonymous Symbol]
+    mdr32fxqi_i2c.o(.text.I2C_GetFlagStatus) refers to mdr32fxqi_i2c.o(.text.I2C_GetLastEvent) for I2C_GetLastEvent
+    mdr32fxqi_i2c.o(.ARM.exidx.text.I2C_GetFlagStatus) refers to mdr32fxqi_i2c.o(.text.I2C_GetFlagStatus) for [Anonymous Symbol]
+    assert.o(.text) refers to assert_puts.o(.text) for __assert_puts
+    assert.o(.text) refers to abort.o(.text) for abort
+    rt_memcpy_v6.o(.text) refers to rt_memcpy_w.o(.text) for __aeabi_memcpy4
+    __main.o(!!!main) refers to __rtentry.o(.ARM.Collect$$rtentry$$00000000) for __rt_entry
+    dfixu.o(x$fpl$dfixu) refers (Special) to usenofp.o(x$fpl$usenofp) for __I$use$fp
+    dfixu.o(x$fpl$dfixu) refers to dnaninf.o(x$fpl$dnaninf) for __fpl_dnaninf
+    dfixu.o(x$fpl$dfixur) refers (Special) to usenofp.o(x$fpl$usenofp) for __I$use$fp
+    dfixu.o(x$fpl$dfixur) refers to dnaninf.o(x$fpl$dnaninf) for __fpl_dnaninf
+    dflt_clz.o(x$fpl$dfltu) refers (Special) to usenofp.o(x$fpl$usenofp) for __I$use$fp
+    dflt_clz.o(x$fpl$dflt) refers (Special) to usenofp.o(x$fpl$usenofp) for __I$use$fp
+    dflt_clz.o(x$fpl$dfltn) refers (Special) to usenofp.o(x$fpl$usenofp) for __I$use$fp
+    dmul.o(x$fpl$dmul) refers (Special) to usenofp.o(x$fpl$usenofp) for __I$use$fp
+    dmul.o(x$fpl$dmul) refers to dretinf.o(x$fpl$dretinf) for __fpl_dretinf
+    dmul.o(x$fpl$dmul) refers to dnaninf.o(x$fpl$dnaninf) for __fpl_dnaninf
+    __rtentry.o(.ARM.Collect$$rtentry$$00000000) refers (Special) to __rtentry2.o(.ARM.Collect$$rtentry$$0000000A) for __rt_entry_li
+    __rtentry.o(.ARM.Collect$$rtentry$$00000000) refers (Special) to __rtentry2.o(.ARM.Collect$$rtentry$$0000000D) for __rt_entry_main
+    __rtentry.o(.ARM.Collect$$rtentry$$00000000) refers (Special) to __rtentry2.o(.ARM.Collect$$rtentry$$0000000C) for __rt_entry_postli_1
+    __rtentry.o(.ARM.Collect$$rtentry$$00000000) refers (Special) to __rtentry2.o(.ARM.Collect$$rtentry$$00000009) for __rt_entry_postsh_1
+    __rtentry.o(.ARM.Collect$$rtentry$$00000000) refers (Special) to __rtentry2.o(.ARM.Collect$$rtentry$$00000002) for __rt_entry_presh_1
+    __rtentry.o(.ARM.Collect$$rtentry$$00000000) refers (Special) to __rtentry4.o(.ARM.Collect$$rtentry$$00000004) for __rt_entry_sh
+    abort.o(.text) refers to defsig_abrt_outer.o(.text) for __rt_SIGABRT
+    abort.o(.text) refers (Weak) to libshutdown.o(.ARM.Collect$$libshutdown$$00000000) for __rt_lib_shutdown
+    abort.o(.text) refers to sys_exit.o(.text) for _sys_exit
+    assert_puts.o(.text) refers to sys_wrch.o(.text) for _ttywrch
+    dnaninf.o(x$fpl$dnaninf) refers (Special) to usenofp.o(x$fpl$usenofp) for __I$use$fp
+    dretinf.o(x$fpl$dretinf) refers (Special) to usenofp.o(x$fpl$usenofp) for __I$use$fp
+    sys_wrch.o(.text) refers (Special) to use_no_semi.o(.text) for __I$use$semihosting
+    sys_wrch.o(.text) refers (Special) to indicate_semi.o(.text) for __semihosting_library_function
+    sys_exit.o(.text) refers (Special) to use_no_semi.o(.text) for __I$use$semihosting
+    sys_exit.o(.text) refers (Special) to indicate_semi.o(.text) for __semihosting_library_function
+    sys_wrch_hlt.o(.text) refers (Special) to use_no_semi.o(.text) for __I$use$semihosting
+    sys_wrch_hlt.o(.text) refers (Special) to indicate_semi.o(.text) for __semihosting_library_function
+    sys_exit_hlt.o(.text) refers (Special) to use_no_semi.o(.text) for __I$use$semihosting
+    sys_exit_hlt.o(.text) refers (Special) to indicate_semi.o(.text) for __semihosting_library_function
+    __rtentry2.o(.ARM.Collect$$rtentry$$00000008) refers to boardinit2.o(.text) for _platform_post_stackheap_init
+    __rtentry2.o(.ARM.Collect$$rtentry$$0000000A) refers to libinit.o(.ARM.Collect$$libinit$$00000000) for __rt_lib_init
+    __rtentry2.o(.ARM.Collect$$rtentry$$0000000B) refers to boardinit3.o(.text) for _platform_post_lib_init
+    __rtentry2.o(.ARM.Collect$$rtentry$$0000000D) refers to main.o(.text.main) for main
+    __rtentry2.o(.ARM.Collect$$rtentry$$0000000D) refers to exit.o(.text) for exit
+    __rtentry2.o(.ARM.exidx) refers to __rtentry2.o(.ARM.Collect$$rtentry$$00000001) for .ARM.Collect$$rtentry$$00000001
+    __rtentry2.o(.ARM.exidx) refers to __rtentry2.o(.ARM.Collect$$rtentry$$00000008) for .ARM.Collect$$rtentry$$00000008
+    __rtentry2.o(.ARM.exidx) refers to __rtentry2.o(.ARM.Collect$$rtentry$$0000000A) for .ARM.Collect$$rtentry$$0000000A
+    __rtentry2.o(.ARM.exidx) refers to __rtentry2.o(.ARM.Collect$$rtentry$$0000000B) for .ARM.Collect$$rtentry$$0000000B
+    __rtentry2.o(.ARM.exidx) refers to __rtentry2.o(.ARM.Collect$$rtentry$$0000000D) for .ARM.Collect$$rtentry$$0000000D
+    __rtentry4.o(.ARM.Collect$$rtentry$$00000004) refers to sys_stackheap_outer.o(.text) for __user_setup_stackheap
+    __rtentry4.o(.ARM.exidx) refers to __rtentry4.o(.ARM.Collect$$rtentry$$00000004) for .ARM.Collect$$rtentry$$00000004
+    defsig_abrt_outer.o(.text) refers to defsig_abrt_inner.o(.text) for __rt_SIGABRT_inner
+    defsig_abrt_outer.o(.text) refers to defsig_exit.o(.text) for __sig_exit
+    defsig_abrt_formal.o(.text) refers to rt_raise.o(.text) for __rt_raise
+    sys_stackheap_outer.o(.text) refers to libspace.o(.text) for __user_perproc_libspace
+    sys_stackheap_outer.o(.text) refers to startup_mdr32f9q2i.o(.text) for __user_initial_stackheap
+    rt_raise.o(.text) refers to __raise.o(.text) for __raise
+    rt_raise.o(.text) refers to sys_exit.o(.text) for _sys_exit
+    exit.o(.text) refers to rtexit.o(.ARM.Collect$$rtexit$$00000000) for __rt_exit
+    defsig_exit.o(.text) refers to sys_exit.o(.text) for _sys_exit
+    defsig_abrt_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000030) for __rt_lib_init_alloca_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000002E) for __rt_lib_init_argv_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000001D) for __rt_lib_init_atexit_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000023) for __rt_lib_init_clock_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000034) for __rt_lib_init_cpp_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000032) for __rt_lib_init_exceptions_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000002) for __rt_lib_init_fp_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000021) for __rt_lib_init_fp_trap_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000025) for __rt_lib_init_getenv_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000000C) for __rt_lib_init_heap_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000013) for __rt_lib_init_lc_collate_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000015) for __rt_lib_init_lc_ctype_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000017) for __rt_lib_init_lc_monetary_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000019) for __rt_lib_init_lc_numeric_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000001B) for __rt_lib_init_lc_time_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000006) for __rt_lib_init_preinit_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000010) for __rt_lib_init_rand_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000004) for __rt_lib_init_relocate_pie_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000035) for __rt_lib_init_return
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000001F) for __rt_lib_init_signal_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000027) for __rt_lib_init_stdio_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000000E) for __rt_lib_init_user_alloc_1
+    libspace.o(.text) refers to libspace.o(.bss) for __libspace_start
+    rtexit.o(.ARM.Collect$$rtexit$$00000000) refers (Special) to rtexit2.o(.ARM.Collect$$rtexit$$00000004) for __rt_exit_exit
+    rtexit.o(.ARM.Collect$$rtexit$$00000000) refers (Special) to rtexit2.o(.ARM.Collect$$rtexit$$00000003) for __rt_exit_ls
+    rtexit.o(.ARM.Collect$$rtexit$$00000000) refers (Special) to rtexit2.o(.ARM.Collect$$rtexit$$00000002) for __rt_exit_prels_1
+    rtexit.o(.ARM.exidx) refers (Special) to rtexit2.o(.ARM.Collect$$rtexit$$00000004) for __rt_exit_exit
+    rtexit.o(.ARM.exidx) refers (Special) to rtexit2.o(.ARM.Collect$$rtexit$$00000003) for __rt_exit_ls
+    rtexit.o(.ARM.exidx) refers (Special) to rtexit2.o(.ARM.Collect$$rtexit$$00000002) for __rt_exit_prels_1
+    rtexit.o(.ARM.exidx) refers to rtexit.o(.ARM.Collect$$rtexit$$00000000) for .ARM.Collect$$rtexit$$00000000
+    __raise.o(.text) refers to defsig.o(CL$$defsig) for __default_signal_handler
+    defsig_general.o(.text) refers to sys_wrch.o(.text) for _ttywrch
+    libinit2.o(.ARM.Collect$$libinit$$00000012) refers to libinit2.o(.ARM.Collect$$libinit$$00000011) for .ARM.Collect$$libinit$$00000011
+    libinit2.o(.ARM.Collect$$libinit$$00000014) refers to libinit2.o(.ARM.Collect$$libinit$$00000011) for .ARM.Collect$$libinit$$00000011
+    libinit2.o(.ARM.Collect$$libinit$$00000016) refers to libinit2.o(.ARM.Collect$$libinit$$00000011) for .ARM.Collect$$libinit$$00000011
+    libinit2.o(.ARM.Collect$$libinit$$00000018) refers to libinit2.o(.ARM.Collect$$libinit$$00000011) for .ARM.Collect$$libinit$$00000011
+    libinit2.o(.ARM.Collect$$libinit$$0000001A) refers to libinit2.o(.ARM.Collect$$libinit$$00000011) for .ARM.Collect$$libinit$$00000011
+    libinit2.o(.ARM.Collect$$libinit$$00000028) refers to argv_veneer.o(.emb_text) for __ARM_argv_veneer
+    libinit2.o(.ARM.Collect$$libinit$$00000029) refers to argv_veneer.o(.emb_text) for __ARM_argv_veneer
+    rtexit2.o(.ARM.Collect$$rtexit$$00000003) refers to libshutdown.o(.ARM.Collect$$libshutdown$$00000000) for __rt_lib_shutdown
+    rtexit2.o(.ARM.Collect$$rtexit$$00000004) refers to sys_exit.o(.text) for _sys_exit
+    rtexit2.o(.ARM.exidx) refers to rtexit2.o(.ARM.Collect$$rtexit$$00000001) for .ARM.Collect$$rtexit$$00000001
+    rtexit2.o(.ARM.exidx) refers to rtexit2.o(.ARM.Collect$$rtexit$$00000003) for .ARM.Collect$$rtexit$$00000003
+    rtexit2.o(.ARM.exidx) refers to rtexit2.o(.ARM.Collect$$rtexit$$00000004) for .ARM.Collect$$rtexit$$00000004
+    defsig.o(CL$$defsig) refers to defsig_abrt_inner.o(.text) for __rt_SIGABRT_inner
+    defsig.o(CL$$defsig) refers to defsig_rtmem_inner.o(.text) for __rt_SIGRTMEM_inner
+    argv_veneer.o(.emb_text) refers to no_argv.o(.text) for __ARM_get_argv
+    defsig_fpe_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_rtred_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_rtmem_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_stak_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_pvfn_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_cppl_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_segv_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_other.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    _get_argv_nomalloc.o(.text) refers (Special) to hrguard.o(.text) for __heap_region$guard
+    _get_argv_nomalloc.o(.text) refers to defsig_rtmem_outer.o(.text) for __rt_SIGRTMEM
+    _get_argv_nomalloc.o(.text) refers to sys_command.o(.text) for _sys_command_string
+    libshutdown.o(.ARM.Collect$$libshutdown$$00000000) refers (Special) to libshutdown2.o(.ARM.Collect$$libshutdown$$00000002) for __rt_lib_shutdown_cpp_1
+    libshutdown.o(.ARM.Collect$$libshutdown$$00000000) refers (Special) to libshutdown2.o(.ARM.Collect$$libshutdown$$00000007) for __rt_lib_shutdown_fp_trap_1
+    libshutdown.o(.ARM.Collect$$libshutdown$$00000000) refers (Special) to libshutdown2.o(.ARM.Collect$$libshutdown$$0000000F) for __rt_lib_shutdown_heap_1
+    libshutdown.o(.ARM.Collect$$libshutdown$$00000000) refers (Special) to libshutdown2.o(.ARM.Collect$$libshutdown$$00000010) for __rt_lib_shutdown_return
+    libshutdown.o(.ARM.Collect$$libshutdown$$00000000) refers (Special) to libshutdown2.o(.ARM.Collect$$libshutdown$$0000000A) for __rt_lib_shutdown_signal_1
+    libshutdown.o(.ARM.Collect$$libshutdown$$00000000) refers (Special) to libshutdown2.o(.ARM.Collect$$libshutdown$$00000004) for __rt_lib_shutdown_stdio_1
+    libshutdown.o(.ARM.Collect$$libshutdown$$00000000) refers (Special) to libshutdown2.o(.ARM.Collect$$libshutdown$$0000000C) for __rt_lib_shutdown_user_alloc_1
+    sys_command.o(.text) refers (Special) to use_no_semi.o(.text) for __I$use$semihosting
+    sys_command.o(.text) refers (Special) to indicate_semi.o(.text) for __semihosting_library_function
+    sys_command_hlt.o(.text) refers (Special) to use_no_semi.o(.text) for __I$use$semihosting
+    sys_command_hlt.o(.text) refers (Special) to indicate_semi.o(.text) for __semihosting_library_function
+    defsig_rtmem_outer.o(.text) refers to defsig_rtmem_inner.o(.text) for __rt_SIGRTMEM_inner
+    defsig_rtmem_outer.o(.text) refers to defsig_exit.o(.text) for __sig_exit
+    defsig_rtmem_formal.o(.text) refers to rt_raise.o(.text) for __rt_raise
+
+
+==============================================================================
+
+Removing Unused input sections from the image.
+
+    Removing clock.o(.text), (0 bytes).
+    Removing clock.o(.ARM.exidx.text.config_ext_clk), (8 bytes).
+    Removing clock.o(.text.step_timer_init), (118 bytes).
+    Removing clock.o(.ARM.exidx.text.step_timer_init), (8 bytes).
+    Removing clock.o(.text.__NVIC_EnableIRQ), (48 bytes).
+    Removing clock.o(.ARM.exidx.text.__NVIC_EnableIRQ), (8 bytes).
+    Removing clock.o(.text.step_timer_update_step), (26 bytes).
+    Removing clock.o(.ARM.exidx.text.step_timer_update_step), (8 bytes).
+    Removing clock.o(.text.step_timer_restart), (40 bytes).
+    Removing clock.o(.ARM.exidx.text.step_timer_restart), (8 bytes).
+    Removing clock.o(.text.step_timer_stop), (32 bytes).
+    Removing clock.o(.ARM.exidx.text.step_timer_stop), (8 bytes).
+    Removing clock.o(.text.TIMER1_IRQHandler), (58 bytes).
+    Removing clock.o(.ARM.exidx.text.TIMER1_IRQHandler), (8 bytes).
+    Removing clock.o(.text.sys_timer_init), (112 bytes).
+    Removing clock.o(.ARM.exidx.text.sys_timer_init), (8 bytes).
+    Removing clock.o(.ARM.exidx.text.sys_timer_start), (8 bytes).
+    Removing clock.o(.ARM.exidx.text.sys_timer_stop), (8 bytes).
+    Removing clock.o(.ARM.exidx.text.SysTick_Handler), (8 bytes).
+    Removing current_sensor.o(.text), (0 bytes).
+    Removing current_sensor.o(.text.ssp_init), (218 bytes).
+    Removing current_sensor.o(.ARM.exidx.text.ssp_init), (8 bytes).
+    Removing current_sensor.o(.text.current_sensor_read_ID), (156 bytes).
+    Removing current_sensor.o(.ARM.exidx.text.current_sensor_read_ID), (8 bytes).
+    Removing current_sensor.o(.text.current_sensor_set_80SPS), (142 bytes).
+    Removing current_sensor.o(.ARM.exidx.text.current_sensor_set_80SPS), (8 bytes).
+    Removing current_sensor.o(.text.current_sensor_get_current), (222 bytes).
+    Removing current_sensor.o(.ARM.exidx.text.current_sensor_get_current), (8 bytes).
+    Removing fuzzy_regulator.o(.text), (0 bytes).
+    Removing fuzzy_regulator.o(.text.fuzzy_regulator_update_step), (76 bytes).
+    Removing fuzzy_regulator.o(.ARM.exidx.text.fuzzy_regulator_update_step), (8 bytes).
+    Removing fuzzy_regulator.o(.ARM.exidx.text.init_fuzzy_regulator), (8 bytes).
+    Removing fuzzy_regulator.o(.ARM.exidx.text.fuzzy_reg_transform), (8 bytes).
+    Removing fuzzy_regulator.o(.ARM.exidx.text.fuzzy_ch_transform), (8 bytes).
+    Removing fuzzy_regulator.o(.ARM.exidx.text.intgr_func), (8 bytes).
+    Removing fuzzy_regulator.o(.ARM.exidx.text.dfrn_func), (8 bytes).
+    Removing fuzzy_regulator.o(.ARM.exidx.text.IN_mux), (8 bytes).
+    Removing fuzzy_regulator.o(.ARM.exidx.text.PP_mux), (8 bytes).
+    Removing fuzzy_regulator.o(.ARM.exidx.text.NL_transform), (8 bytes).
+    Removing i2c.o(.text), (0 bytes).
+    Removing i2c.o(.text.init_i2c_driver), (120 bytes).
+    Removing i2c.o(.ARM.exidx.text.init_i2c_driver), (8 bytes).
+    Removing i2c.o(.text.mem_wr), (314 bytes).
+    Removing i2c.o(.ARM.exidx.text.mem_wr), (8 bytes).
+    Removing i2c.o(.text.mem_rd), (22 bytes).
+    Removing i2c.o(.ARM.exidx.text.mem_rd), (8 bytes).
+    Removing main.o(.text), (0 bytes).
+    Removing main.o(.ARM.exidx.text.eMBRegInputCB), (8 bytes).
+    Removing main.o(.ARM.exidx.text.eMBRegHoldingCB), (8 bytes).
+    Removing main.o(.ARM.exidx.text.eMBRegCoilsCB), (8 bytes).
+    Removing main.o(.ARM.exidx.text.eMBRegDiscreteCB), (8 bytes).
+    Removing main.o(.ARM.exidx.text.main), (8 bytes).
+    Removing main.o(.bss.state), (4 bytes).
+    Removing main.o(.ARM.use_no_argv), (4 bytes).
+    Removing mb.o(.text), (0 bytes).
+    Removing mb.o(.ARM.exidx.text.eMBInit), (8 bytes).
+    Removing mb.o(.text.eMBRegisterCB), (254 bytes).
+    Removing mb.o(.ARM.exidx.text.eMBRegisterCB), (8 bytes).
+    Removing mb.o(.text.eMBClose), (72 bytes).
+    Removing mb.o(.ARM.exidx.text.eMBClose), (8 bytes).
+    Removing mb.o(.ARM.exidx.text.eMBEnable), (8 bytes).
+    Removing mb.o(.text.eMBDisable), (92 bytes).
+    Removing mb.o(.ARM.exidx.text.eMBDisable), (8 bytes).
+    Removing mb.o(.ARM.exidx.text.eMBPoll), (8 bytes).
+    Removing mb.o(.bss.pxMBFrameCBReceiveFSMCur), (4 bytes).
+    Removing mb.o(.bss.pxMBFrameCBTransmitFSMCur), (4 bytes).
+    Removing mbascii.o(.text), (0 bytes).
+    Removing mbcrc.o(.text), (0 bytes).
+    Removing mbcrc.o(.ARM.exidx.text.usMBCRC16), (8 bytes).
+    Removing mbfunccoils.o(.text), (0 bytes).
+    Removing mbfunccoils.o(.ARM.exidx.text.eMBFuncReadCoils), (8 bytes).
+    Removing mbfunccoils.o(.ARM.exidx.text.eMBFuncWriteCoil), (8 bytes).
+    Removing mbfunccoils.o(.ARM.exidx.text.eMBFuncWriteMultipleCoils), (8 bytes).
+    Removing mbfuncdiag.o(.text), (0 bytes).
+    Removing mbfuncdisc.o(.text), (0 bytes).
+    Removing mbfuncdisc.o(.ARM.exidx.text.eMBFuncReadDiscreteInputs), (8 bytes).
+    Removing mbfuncholding.o(.text), (0 bytes).
+    Removing mbfuncholding.o(.ARM.exidx.text.eMBFuncWriteHoldingRegister), (8 bytes).
+    Removing mbfuncholding.o(.ARM.exidx.text.eMBFuncWriteMultipleHoldingRegister), (8 bytes).
+    Removing mbfuncholding.o(.ARM.exidx.text.eMBFuncReadHoldingRegister), (8 bytes).
+    Removing mbfuncholding.o(.ARM.exidx.text.eMBFuncReadWriteMultipleHoldingRegister), (8 bytes).
+    Removing mbfuncinput.o(.text), (0 bytes).
+    Removing mbfuncinput.o(.ARM.exidx.text.eMBFuncReadInputRegister), (8 bytes).
+    Removing mbfuncother.o(.text), (0 bytes).
+    Removing mbfuncother.o(.text.eMBSetSlaveID), (170 bytes).
+    Removing mbfuncother.o(.ARM.exidx.text.eMBSetSlaveID), (8 bytes).
+    Removing mbfuncother.o(.ARM.exidx.text.eMBFuncReportSlaveID), (8 bytes).
+    Removing mbrtu.o(.text), (0 bytes).
+    Removing mbrtu.o(.ARM.exidx.text.eMBRTUInit), (8 bytes).
+    Removing mbrtu.o(.ARM.exidx.text.eMBRTUStart), (8 bytes).
+    Removing mbrtu.o(.ARM.exidx.text.eMBRTUStop), (8 bytes).
+    Removing mbrtu.o(.ARM.exidx.text.eMBRTUReceive), (8 bytes).
+    Removing mbrtu.o(.ARM.exidx.text.eMBRTUSend), (8 bytes).
+    Removing mbrtu.o(.ARM.exidx.text.xMBRTUTransmitFSM), (8 bytes).
+    Removing mbrtu.o(.ARM.exidx.text.xMBRTUReceiveFSM), (8 bytes).
+    Removing mbrtu.o(.ARM.exidx.text.xMBRTUTimerT35Expired), (8 bytes).
+    Removing mbutils.o(.text), (0 bytes).
+    Removing mbutils.o(.text.xMBUtilSetBits), (218 bytes).
+    Removing mbutils.o(.ARM.exidx.text.xMBUtilSetBits), (8 bytes).
+    Removing mbutils.o(.text.xMBUtilGetBits), (122 bytes).
+    Removing mbutils.o(.ARM.exidx.text.xMBUtilGetBits), (8 bytes).
+    Removing mbutils.o(.ARM.exidx.text.prveMBError2Exception), (8 bytes).
+    Removing mbutils.o(.rodata.str1.1), (27 bytes).
+    Removing motor_control.o(.text), (0 bytes).
+    Removing motor_control.o(.ARM.exidx.text.motor_control_init), (8 bytes).
+    Removing motor_control.o(.ARM.exidx.text.__PORT_Init), (8 bytes).
+    Removing motor_control.o(.ARM.exidx.text.set_main_motor_out_volt), (8 bytes).
+    Removing motor_control.o(.text.set_sub_motor_out_volt), (158 bytes).
+    Removing motor_control.o(.ARM.exidx.text.set_sub_motor_out_volt), (8 bytes).
+    Removing motor_control.o(.ARM.exidx.text.motor_control_write_mode), (8 bytes).
+    Removing motor_control.o(.ARM.exidx.text.motor_control_write_state), (8 bytes).
+    Removing motor_control.o(.ARM.exidx.text.I2C_packet_transfered), (8 bytes).
+    Removing portevent.o(.text), (0 bytes).
+    Removing portevent.o(.ARM.exidx.text.xMBPortEventInit), (8 bytes).
+    Removing portevent.o(.ARM.exidx.text.xMBPortEventPost), (8 bytes).
+    Removing portevent.o(.ARM.exidx.text.xMBPortEventGet), (8 bytes).
+    Removing portserial.o(.text), (0 bytes).
+    Removing portserial.o(.ARM.exidx.text.vMBPortSerialEnable), (8 bytes).
+    Removing portserial.o(.ARM.exidx.text.xMBPortSerialInit), (8 bytes).
+    Removing portserial.o(.ARM.exidx.text.__PORT_Init), (8 bytes).
+    Removing portserial.o(.ARM.exidx.text.__NVIC_EnableIRQ), (8 bytes).
+    Removing portserial.o(.ARM.exidx.text.xMBPortSerialPutByte), (8 bytes).
+    Removing portserial.o(.ARM.exidx.text.xMBPortSerialGetByte), (8 bytes).
+    Removing portserial.o(.ARM.exidx.text.UART2_IRQHandler), (8 bytes).
+    Removing portserial.o(.ARM.exidx.text.prvvUARTTxReadyISR), (8 bytes).
+    Removing portserial.o(.ARM.exidx.text.prvvUARTRxISR), (8 bytes).
+    Removing porttimer.o(.text), (0 bytes).
+    Removing porttimer.o(.ARM.exidx.text.xMBPortTimersInit), (8 bytes).
+    Removing porttimer.o(.ARM.exidx.text.__NVIC_EnableIRQ), (8 bytes).
+    Removing porttimer.o(.ARM.exidx.text.vMBPortTimersEnable), (8 bytes).
+    Removing porttimer.o(.ARM.exidx.text.vMBPortTimersDisable), (8 bytes).
+    Removing porttimer.o(.ARM.exidx.text.Timer2_IRQHandler), (8 bytes).
+    Removing porttimer.o(.ARM.exidx.text.prvvTIMERExpiredISR), (8 bytes).
+    Removing uart.o(.text), (0 bytes).
+    Removing uart.o(.text.sendStringUART), (70 bytes).
+    Removing uart.o(.ARM.exidx.text.sendStringUART), (8 bytes).
+    Removing system_mdr32f9q2i.o(.text), (0 bytes).
+    Removing system_mdr32f9q2i.o(.ARM.exidx.text.SystemCoreClockUpdate), (8 bytes).
+    Removing system_mdr32f9q2i.o(.ARM.exidx.text.SystemInit), (8 bytes).
+    Removing mdr32fxqi_port.o(.text), (0 bytes).
+    Removing mdr32fxqi_port.o(.text.PORT_DeInit), (42 bytes).
+    Removing mdr32fxqi_port.o(.ARM.exidx.text.PORT_DeInit), (8 bytes).
+    Removing mdr32fxqi_port.o(.ARM.exidx.text.PORT_Init), (8 bytes).
+    Removing mdr32fxqi_port.o(.ARM.exidx.text.PORT_StructInit), (8 bytes).
+    Removing mdr32fxqi_port.o(.text.PORT_ReadInputDataBit), (46 bytes).
+    Removing mdr32fxqi_port.o(.ARM.exidx.text.PORT_ReadInputDataBit), (8 bytes).
+    Removing mdr32fxqi_port.o(.text.PORT_ReadInputData), (12 bytes).
+    Removing mdr32fxqi_port.o(.ARM.exidx.text.PORT_ReadInputData), (8 bytes).
+    Removing mdr32fxqi_port.o(.text.PORT_SetBits), (38 bytes).
+    Removing mdr32fxqi_port.o(.ARM.exidx.text.PORT_SetBits), (8 bytes).
+    Removing mdr32fxqi_port.o(.text.PORT_ResetBits), (36 bytes).
+    Removing mdr32fxqi_port.o(.ARM.exidx.text.PORT_ResetBits), (8 bytes).
+    Removing mdr32fxqi_port.o(.text.PORT_WriteBit), (80 bytes).
+    Removing mdr32fxqi_port.o(.ARM.exidx.text.PORT_WriteBit), (8 bytes).
+    Removing mdr32fxqi_port.o(.text.PORT_Write), (32 bytes).
+    Removing mdr32fxqi_port.o(.ARM.exidx.text.PORT_Write), (8 bytes).
+    Removing mdr32fxqi_rst_clk.o(.text), (0 bytes).
+    Removing mdr32fxqi_rst_clk.o(.ARM.exidx.text.RST_CLK_DeInit), (8 bytes).
+    Removing mdr32fxqi_rst_clk.o(.ARM.exidx.text.RST_CLK_WarmDeInit), (8 bytes).
+    Removing mdr32fxqi_rst_clk.o(.ARM.exidx.text.RST_CLK_PCLKcmd), (8 bytes).
+    Removing mdr32fxqi_rst_clk.o(.ARM.exidx.text.RST_CLK_HSIcmd), (8 bytes).
+    Removing mdr32fxqi_rst_clk.o(.ARM.exidx.text.RST_CLK_HSIstatus), (8 bytes).
+    Removing mdr32fxqi_rst_clk.o(.ARM.exidx.text.RST_CLK_CPUclkSelection), (8 bytes).
+    Removing mdr32fxqi_rst_clk.o(.ARM.exidx.text.RST_CLK_HSEconfig), (8 bytes).
+    Removing mdr32fxqi_rst_clk.o(.text.RST_CLK_HSEstatus), (100 bytes).
+    Removing mdr32fxqi_rst_clk.o(.ARM.exidx.text.RST_CLK_HSEstatus), (8 bytes).
+    Removing mdr32fxqi_rst_clk.o(.ARM.exidx.text.RST_CLK_GetFlagStatus), (8 bytes).
+    Removing mdr32fxqi_rst_clk.o(.text.RST_CLK_LSEconfig), (86 bytes).
+    Removing mdr32fxqi_rst_clk.o(.ARM.exidx.text.RST_CLK_LSEconfig), (8 bytes).
+    Removing mdr32fxqi_rst_clk.o(.text.RST_CLK_LSEstatus), (100 bytes).
+    Removing mdr32fxqi_rst_clk.o(.ARM.exidx.text.RST_CLK_LSEstatus), (8 bytes).
+    Removing mdr32fxqi_rst_clk.o(.text.RST_CLK_HSIadjust), (42 bytes).
+    Removing mdr32fxqi_rst_clk.o(.ARM.exidx.text.RST_CLK_HSIadjust), (8 bytes).
+    Removing mdr32fxqi_rst_clk.o(.text.RST_CLK_LSIcmd), (24 bytes).
+    Removing mdr32fxqi_rst_clk.o(.ARM.exidx.text.RST_CLK_LSIcmd), (8 bytes).
+    Removing mdr32fxqi_rst_clk.o(.text.RST_CLK_LSIadjust), (42 bytes).
+    Removing mdr32fxqi_rst_clk.o(.ARM.exidx.text.RST_CLK_LSIadjust), (8 bytes).
+    Removing mdr32fxqi_rst_clk.o(.text.RST_CLK_LSIstatus), (100 bytes).
+    Removing mdr32fxqi_rst_clk.o(.ARM.exidx.text.RST_CLK_LSIstatus), (8 bytes).
+    Removing mdr32fxqi_rst_clk.o(.ARM.exidx.text.RST_CLK_CPU_PLLconfig), (8 bytes).
+    Removing mdr32fxqi_rst_clk.o(.ARM.exidx.text.RST_CLK_CPU_PLLuse), (8 bytes).
+    Removing mdr32fxqi_rst_clk.o(.ARM.exidx.text.RST_CLK_CPU_PLLcmd), (8 bytes).
+    Removing mdr32fxqi_rst_clk.o(.ARM.exidx.text.RST_CLK_CPU_PLLstatus), (8 bytes).
+    Removing mdr32fxqi_rst_clk.o(.text.RST_CLK_CPUclkPrescaler), (44 bytes).
+    Removing mdr32fxqi_rst_clk.o(.ARM.exidx.text.RST_CLK_CPUclkPrescaler), (8 bytes).
+    Removing mdr32fxqi_rst_clk.o(.text.RST_CLK_USB_PLLconfig), (104 bytes).
+    Removing mdr32fxqi_rst_clk.o(.ARM.exidx.text.RST_CLK_USB_PLLconfig), (8 bytes).
+    Removing mdr32fxqi_rst_clk.o(.text.RST_CLK_USB_PLLuse), (24 bytes).
+    Removing mdr32fxqi_rst_clk.o(.ARM.exidx.text.RST_CLK_USB_PLLuse), (8 bytes).
+    Removing mdr32fxqi_rst_clk.o(.text.RST_CLK_USB_PLLcmd), (22 bytes).
+    Removing mdr32fxqi_rst_clk.o(.ARM.exidx.text.RST_CLK_USB_PLLcmd), (8 bytes).
+    Removing mdr32fxqi_rst_clk.o(.text.RST_CLK_USB_PLLstatus), (100 bytes).
+    Removing mdr32fxqi_rst_clk.o(.ARM.exidx.text.RST_CLK_USB_PLLstatus), (8 bytes).
+    Removing mdr32fxqi_rst_clk.o(.text.RST_CLK_USBclkPrescaler), (24 bytes).
+    Removing mdr32fxqi_rst_clk.o(.ARM.exidx.text.RST_CLK_USBclkPrescaler), (8 bytes).
+    Removing mdr32fxqi_rst_clk.o(.text.RST_CLK_USBclkEnable), (24 bytes).
+    Removing mdr32fxqi_rst_clk.o(.ARM.exidx.text.RST_CLK_USBclkEnable), (8 bytes).
+    Removing mdr32fxqi_rst_clk.o(.text.RST_CLK_ADCclkSelection), (42 bytes).
+    Removing mdr32fxqi_rst_clk.o(.ARM.exidx.text.RST_CLK_ADCclkSelection), (8 bytes).
+    Removing mdr32fxqi_rst_clk.o(.text.RST_CLK_ADCclkPrescaler), (44 bytes).
+    Removing mdr32fxqi_rst_clk.o(.ARM.exidx.text.RST_CLK_ADCclkPrescaler), (8 bytes).
+    Removing mdr32fxqi_rst_clk.o(.text.RST_CLK_ADCclkEnable), (24 bytes).
+    Removing mdr32fxqi_rst_clk.o(.ARM.exidx.text.RST_CLK_ADCclkEnable), (8 bytes).
+    Removing mdr32fxqi_rst_clk.o(.text.RST_CLK_HSIclkPrescaler), (44 bytes).
+    Removing mdr32fxqi_rst_clk.o(.ARM.exidx.text.RST_CLK_HSIclkPrescaler), (8 bytes).
+    Removing mdr32fxqi_rst_clk.o(.text.RST_CLK_RTC_HSIclkEnable), (24 bytes).
+    Removing mdr32fxqi_rst_clk.o(.ARM.exidx.text.RST_CLK_RTC_HSIclkEnable), (8 bytes).
+    Removing mdr32fxqi_rst_clk.o(.text.RST_CLK_HSEclkPrescaler), (42 bytes).
+    Removing mdr32fxqi_rst_clk.o(.ARM.exidx.text.RST_CLK_HSEclkPrescaler), (8 bytes).
+    Removing mdr32fxqi_rst_clk.o(.text.RST_CLK_RTC_HSEclkEnable), (24 bytes).
+    Removing mdr32fxqi_rst_clk.o(.ARM.exidx.text.RST_CLK_RTC_HSEclkEnable), (8 bytes).
+    Removing mdr32fxqi_rst_clk.o(.text.RST_CLK_CPUclkSelectionC1), (42 bytes).
+    Removing mdr32fxqi_rst_clk.o(.ARM.exidx.text.RST_CLK_CPUclkSelectionC1), (8 bytes).
+    Removing mdr32fxqi_rst_clk.o(.ARM.exidx.text.RST_CLK_GetClocksFreq), (8 bytes).
+    Removing mdr32fxqi_timer.o(.text), (0 bytes).
+    Removing mdr32fxqi_timer.o(.ARM.exidx.text.TIMER_DeInit), (8 bytes).
+    Removing mdr32fxqi_timer.o(.ARM.exidx.text.TIMER_CntInit), (8 bytes).
+    Removing mdr32fxqi_timer.o(.text.TIMER_CntStructInit), (58 bytes).
+    Removing mdr32fxqi_timer.o(.ARM.exidx.text.TIMER_CntStructInit), (8 bytes).
+    Removing mdr32fxqi_timer.o(.ARM.exidx.text.TIMER_Cmd), (8 bytes).
+    Removing mdr32fxqi_timer.o(.ARM.exidx.text.TIMER_SetCounter), (8 bytes).
+    Removing mdr32fxqi_timer.o(.text.TIMER_GetCounter), (14 bytes).
+    Removing mdr32fxqi_timer.o(.ARM.exidx.text.TIMER_GetCounter), (8 bytes).
+    Removing mdr32fxqi_timer.o(.text.TIMER_SetCntPrescaler), (20 bytes).
+    Removing mdr32fxqi_timer.o(.ARM.exidx.text.TIMER_SetCntPrescaler), (8 bytes).
+    Removing mdr32fxqi_timer.o(.text.TIMER_GetCntPrescaler), (14 bytes).
+    Removing mdr32fxqi_timer.o(.ARM.exidx.text.TIMER_GetCntPrescaler), (8 bytes).
+    Removing mdr32fxqi_timer.o(.text.TIMER_SetCntAutoreload), (20 bytes).
+    Removing mdr32fxqi_timer.o(.ARM.exidx.text.TIMER_SetCntAutoreload), (8 bytes).
+    Removing mdr32fxqi_timer.o(.text.TIMER_CntAutoreloadConfig), (54 bytes).
+    Removing mdr32fxqi_timer.o(.ARM.exidx.text.TIMER_CntAutoreloadConfig), (8 bytes).
+    Removing mdr32fxqi_timer.o(.text.TIMER_GetCntAutoreload), (14 bytes).
+    Removing mdr32fxqi_timer.o(.ARM.exidx.text.TIMER_GetCntAutoreload), (8 bytes).
+    Removing mdr32fxqi_timer.o(.text.TIMER_CntEventSourceConfig), (42 bytes).
+    Removing mdr32fxqi_timer.o(.ARM.exidx.text.TIMER_CntEventSourceConfig), (8 bytes).
+    Removing mdr32fxqi_timer.o(.text.TIMER_FilterSamplingConfig), (42 bytes).
+    Removing mdr32fxqi_timer.o(.ARM.exidx.text.TIMER_FilterSamplingConfig), (8 bytes).
+    Removing mdr32fxqi_timer.o(.text.TIMER_CounterModeConfig), (42 bytes).
+    Removing mdr32fxqi_timer.o(.ARM.exidx.text.TIMER_CounterModeConfig), (8 bytes).
+    Removing mdr32fxqi_timer.o(.text.TIMER_SetCounterDirection), (42 bytes).
+    Removing mdr32fxqi_timer.o(.ARM.exidx.text.TIMER_SetCounterDirection), (8 bytes).
+    Removing mdr32fxqi_timer.o(.text.TIMER_ETRInputConfig), (64 bytes).
+    Removing mdr32fxqi_timer.o(.ARM.exidx.text.TIMER_ETRInputConfig), (8 bytes).
+    Removing mdr32fxqi_timer.o(.text.TIMER_ETRFilterConfig), (44 bytes).
+    Removing mdr32fxqi_timer.o(.ARM.exidx.text.TIMER_ETRFilterConfig), (8 bytes).
+    Removing mdr32fxqi_timer.o(.text.TIMER_ETRPrescalerConfig), (42 bytes).
+    Removing mdr32fxqi_timer.o(.ARM.exidx.text.TIMER_ETRPrescalerConfig), (8 bytes).
+    Removing mdr32fxqi_timer.o(.text.TIMER_ETRPolarityConfig), (42 bytes).
+    Removing mdr32fxqi_timer.o(.ARM.exidx.text.TIMER_ETRPolarityConfig), (8 bytes).
+    Removing mdr32fxqi_timer.o(.text.TIMER_BRKPolarityConfig), (42 bytes).
+    Removing mdr32fxqi_timer.o(.ARM.exidx.text.TIMER_BRKPolarityConfig), (8 bytes).
+    Removing mdr32fxqi_timer.o(.text.TIMER_GetCounterDirection), (40 bytes).
+    Removing mdr32fxqi_timer.o(.ARM.exidx.text.TIMER_GetCounterDirection), (8 bytes).
+    Removing mdr32fxqi_timer.o(.text.TIMER_GetCntWriteComplete), (40 bytes).
+    Removing mdr32fxqi_timer.o(.ARM.exidx.text.TIMER_GetCntWriteComplete), (8 bytes).
+    Removing mdr32fxqi_timer.o(.ARM.exidx.text.TIMER_ChnInit), (8 bytes).
+    Removing mdr32fxqi_timer.o(.ARM.exidx.text.TIMER_ChnStructInit), (8 bytes).
+    Removing mdr32fxqi_timer.o(.ARM.exidx.text.TIMER_SetChnCompare), (8 bytes).
+    Removing mdr32fxqi_timer.o(.text.TIMER_ChnCompareConfig), (86 bytes).
+    Removing mdr32fxqi_timer.o(.ARM.exidx.text.TIMER_ChnCompareConfig), (8 bytes).
+    Removing mdr32fxqi_timer.o(.text.TIMER_GetChnCapture), (36 bytes).
+    Removing mdr32fxqi_timer.o(.ARM.exidx.text.TIMER_GetChnCapture), (8 bytes).
+    Removing mdr32fxqi_timer.o(.text.TIMER_SetChnCompare1), (38 bytes).
+    Removing mdr32fxqi_timer.o(.ARM.exidx.text.TIMER_SetChnCompare1), (8 bytes).
+    Removing mdr32fxqi_timer.o(.text.TIMER_ChnCompare1Config), (86 bytes).
+    Removing mdr32fxqi_timer.o(.ARM.exidx.text.TIMER_ChnCompare1Config), (8 bytes).
+    Removing mdr32fxqi_timer.o(.text.TIMER_GetChnCapture1), (36 bytes).
+    Removing mdr32fxqi_timer.o(.ARM.exidx.text.TIMER_GetChnCapture1), (8 bytes).
+    Removing mdr32fxqi_timer.o(.text.TIMER_ChnETR_Cmd), (70 bytes).
+    Removing mdr32fxqi_timer.o(.ARM.exidx.text.TIMER_ChnETR_Cmd), (8 bytes).
+    Removing mdr32fxqi_timer.o(.text.TIMER_ChnETRResetConfig), (60 bytes).
+    Removing mdr32fxqi_timer.o(.ARM.exidx.text.TIMER_ChnETRResetConfig), (8 bytes).
+    Removing mdr32fxqi_timer.o(.text.TIMER_ChnBRKResetConfig), (60 bytes).
+    Removing mdr32fxqi_timer.o(.ARM.exidx.text.TIMER_ChnBRKResetConfig), (8 bytes).
+    Removing mdr32fxqi_timer.o(.text.TIMER_ChnREFFormatConfig), (60 bytes).
+    Removing mdr32fxqi_timer.o(.ARM.exidx.text.TIMER_ChnREFFormatConfig), (8 bytes).
+    Removing mdr32fxqi_timer.o(.text.TIMER_ChnCapturePrescalerConfig), (62 bytes).
+    Removing mdr32fxqi_timer.o(.ARM.exidx.text.TIMER_ChnCapturePrescalerConfig), (8 bytes).
+    Removing mdr32fxqi_timer.o(.text.TIMER_ChnEventSourceConfig), (60 bytes).
+    Removing mdr32fxqi_timer.o(.ARM.exidx.text.TIMER_ChnEventSourceConfig), (8 bytes).
+    Removing mdr32fxqi_timer.o(.text.TIMER_ChnFilterConfig), (60 bytes).
+    Removing mdr32fxqi_timer.o(.ARM.exidx.text.TIMER_ChnFilterConfig), (8 bytes).
+    Removing mdr32fxqi_timer.o(.text.TIMER_GetChnWriteComplete), (58 bytes).
+    Removing mdr32fxqi_timer.o(.ARM.exidx.text.TIMER_GetChnWriteComplete), (8 bytes).
+    Removing mdr32fxqi_timer.o(.text.TIMER_ChnCCR1_EventSourceConfig), (60 bytes).
+    Removing mdr32fxqi_timer.o(.ARM.exidx.text.TIMER_ChnCCR1_EventSourceConfig), (8 bytes).
+    Removing mdr32fxqi_timer.o(.text.TIMER_ChnCCR1_Cmd), (70 bytes).
+    Removing mdr32fxqi_timer.o(.ARM.exidx.text.TIMER_ChnCCR1_Cmd), (8 bytes).
+    Removing mdr32fxqi_timer.o(.ARM.exidx.text.TIMER_ChnOutInit), (8 bytes).
+    Removing mdr32fxqi_timer.o(.ARM.exidx.text.TIMER_ChnOutStructInit), (8 bytes).
+    Removing mdr32fxqi_timer.o(.text.TIMER_ChnOutConfig), (92 bytes).
+    Removing mdr32fxqi_timer.o(.ARM.exidx.text.TIMER_ChnOutConfig), (8 bytes).
+    Removing mdr32fxqi_timer.o(.text.TIMER_ChnOutSourceConfig), (62 bytes).
+    Removing mdr32fxqi_timer.o(.ARM.exidx.text.TIMER_ChnOutSourceConfig), (8 bytes).
+    Removing mdr32fxqi_timer.o(.text.TIMER_ChnOutModeConfig), (60 bytes).
+    Removing mdr32fxqi_timer.o(.ARM.exidx.text.TIMER_ChnOutModeConfig), (8 bytes).
+    Removing mdr32fxqi_timer.o(.text.TIMER_ChnOutPolarityConfig), (62 bytes).
+    Removing mdr32fxqi_timer.o(.ARM.exidx.text.TIMER_ChnOutPolarityConfig), (8 bytes).
+    Removing mdr32fxqi_timer.o(.text.TIMER_ChnNOutConfig), (94 bytes).
+    Removing mdr32fxqi_timer.o(.ARM.exidx.text.TIMER_ChnNOutConfig), (8 bytes).
+    Removing mdr32fxqi_timer.o(.text.TIMER_ChnNOutSourceConfig), (62 bytes).
+    Removing mdr32fxqi_timer.o(.ARM.exidx.text.TIMER_ChnNOutSourceConfig), (8 bytes).
+    Removing mdr32fxqi_timer.o(.text.TIMER_ChnNOutModeConfig), (62 bytes).
+    Removing mdr32fxqi_timer.o(.ARM.exidx.text.TIMER_ChnNOutModeConfig), (8 bytes).
+    Removing mdr32fxqi_timer.o(.text.TIMER_ChnNOutPolarityConfig), (62 bytes).
+    Removing mdr32fxqi_timer.o(.ARM.exidx.text.TIMER_ChnNOutPolarityConfig), (8 bytes).
+    Removing mdr32fxqi_timer.o(.text.TIMER_ChnOutDTGConfig), (58 bytes).
+    Removing mdr32fxqi_timer.o(.ARM.exidx.text.TIMER_ChnOutDTGConfig), (8 bytes).
+    Removing mdr32fxqi_timer.o(.text.TIMER_GetStatus), (12 bytes).
+    Removing mdr32fxqi_timer.o(.ARM.exidx.text.TIMER_GetStatus), (8 bytes).
+    Removing mdr32fxqi_timer.o(.text.TIMER_GetFlagStatus), (42 bytes).
+    Removing mdr32fxqi_timer.o(.ARM.exidx.text.TIMER_GetFlagStatus), (8 bytes).
+    Removing mdr32fxqi_timer.o(.text.TIMER_ClearFlag), (18 bytes).
+    Removing mdr32fxqi_timer.o(.ARM.exidx.text.TIMER_ClearFlag), (8 bytes).
+    Removing mdr32fxqi_timer.o(.text.TIMER_DMACmd), (54 bytes).
+    Removing mdr32fxqi_timer.o(.ARM.exidx.text.TIMER_DMACmd), (8 bytes).
+    Removing mdr32fxqi_timer.o(.ARM.exidx.text.TIMER_ITConfig), (8 bytes).
+    Removing mdr32fxqi_timer.o(.text.TIMER_GetITStatus), (56 bytes).
+    Removing mdr32fxqi_timer.o(.ARM.exidx.text.TIMER_GetITStatus), (8 bytes).
+    Removing mdr32fxqi_timer.o(.ARM.exidx.text.TIMER_BRGInit), (8 bytes).
+    Removing mdr32fxqi_uart.o(.text), (0 bytes).
+    Removing mdr32fxqi_uart.o(.text.UART_DeInit), (62 bytes).
+    Removing mdr32fxqi_uart.o(.ARM.exidx.text.UART_DeInit), (8 bytes).
+    Removing mdr32fxqi_uart.o(.ARM.exidx.text.UART_Init), (8 bytes).
+    Removing mdr32fxqi_uart.o(.text.UART_StructInit), (42 bytes).
+    Removing mdr32fxqi_uart.o(.ARM.exidx.text.UART_StructInit), (8 bytes).
+    Removing mdr32fxqi_uart.o(.ARM.exidx.text.UART_Cmd), (8 bytes).
+    Removing mdr32fxqi_uart.o(.ARM.exidx.text.UART_ITConfig), (8 bytes).
+    Removing mdr32fxqi_uart.o(.ARM.exidx.text.UART_GetITStatus), (8 bytes).
+    Removing mdr32fxqi_uart.o(.text.UART_GetITStatusMasked), (46 bytes).
+    Removing mdr32fxqi_uart.o(.ARM.exidx.text.UART_GetITStatusMasked), (8 bytes).
+    Removing mdr32fxqi_uart.o(.ARM.exidx.text.UART_ClearITPendingBit), (8 bytes).
+    Removing mdr32fxqi_uart.o(.text.UART_DMAConfig), (32 bytes).
+    Removing mdr32fxqi_uart.o(.ARM.exidx.text.UART_DMAConfig), (8 bytes).
+    Removing mdr32fxqi_uart.o(.text.UART_DMACmd), (48 bytes).
+    Removing mdr32fxqi_uart.o(.ARM.exidx.text.UART_DMACmd), (8 bytes).
+    Removing mdr32fxqi_uart.o(.ARM.exidx.text.UART_SendData), (8 bytes).
+    Removing mdr32fxqi_uart.o(.ARM.exidx.text.UART_ReceiveData), (8 bytes).
+    Removing mdr32fxqi_uart.o(.text.UART_BreakLine), (46 bytes).
+    Removing mdr32fxqi_uart.o(.ARM.exidx.text.UART_BreakLine), (8 bytes).
+    Removing mdr32fxqi_uart.o(.text.UART_IrDAConfig), (68 bytes).
+    Removing mdr32fxqi_uart.o(.ARM.exidx.text.UART_IrDAConfig), (8 bytes).
+    Removing mdr32fxqi_uart.o(.text.UART_IrDACmd), (46 bytes).
+    Removing mdr32fxqi_uart.o(.ARM.exidx.text.UART_IrDACmd), (8 bytes).
+    Removing mdr32fxqi_uart.o(.ARM.exidx.text.UART_GetFlagStatus), (8 bytes).
+    Removing mdr32fxqi_uart.o(.ARM.exidx.text.UART_BRGInit), (8 bytes).
+    Removing mdr32fxqi_ssp.o(.text), (0 bytes).
+    Removing mdr32fxqi_ssp.o(.text.SSP_DeInit), (36 bytes).
+    Removing mdr32fxqi_ssp.o(.ARM.exidx.text.SSP_DeInit), (8 bytes).
+    Removing mdr32fxqi_ssp.o(.text.SSP_Init), (66 bytes).
+    Removing mdr32fxqi_ssp.o(.ARM.exidx.text.SSP_Init), (8 bytes).
+    Removing mdr32fxqi_ssp.o(.text.SSP_StructInit), (46 bytes).
+    Removing mdr32fxqi_ssp.o(.ARM.exidx.text.SSP_StructInit), (8 bytes).
+    Removing mdr32fxqi_ssp.o(.text.SSP_Cmd), (46 bytes).
+    Removing mdr32fxqi_ssp.o(.ARM.exidx.text.SSP_Cmd), (8 bytes).
+    Removing mdr32fxqi_ssp.o(.text.SSP_ITConfig), (46 bytes).
+    Removing mdr32fxqi_ssp.o(.ARM.exidx.text.SSP_ITConfig), (8 bytes).
+    Removing mdr32fxqi_ssp.o(.text.SSP_GetITStatus), (46 bytes).
+    Removing mdr32fxqi_ssp.o(.ARM.exidx.text.SSP_GetITStatus), (8 bytes).
+    Removing mdr32fxqi_ssp.o(.text.SSP_GetITStatusMasked), (46 bytes).
+    Removing mdr32fxqi_ssp.o(.ARM.exidx.text.SSP_GetITStatusMasked), (8 bytes).
+    Removing mdr32fxqi_ssp.o(.text.SSP_ClearITPendingBit), (24 bytes).
+    Removing mdr32fxqi_ssp.o(.ARM.exidx.text.SSP_ClearITPendingBit), (8 bytes).
+    Removing mdr32fxqi_ssp.o(.text.SSP_DMACmd), (48 bytes).
+    Removing mdr32fxqi_ssp.o(.ARM.exidx.text.SSP_DMACmd), (8 bytes).
+    Removing mdr32fxqi_ssp.o(.text.SSP_SendData), (20 bytes).
+    Removing mdr32fxqi_ssp.o(.ARM.exidx.text.SSP_SendData), (8 bytes).
+    Removing mdr32fxqi_ssp.o(.text.SSP_ReceiveData), (14 bytes).
+    Removing mdr32fxqi_ssp.o(.ARM.exidx.text.SSP_ReceiveData), (8 bytes).
+    Removing mdr32fxqi_ssp.o(.text.SSP_GetFlagStatus), (46 bytes).
+    Removing mdr32fxqi_ssp.o(.ARM.exidx.text.SSP_GetFlagStatus), (8 bytes).
+    Removing mdr32fxqi_ssp.o(.text.SSP_BRGInit), (120 bytes).
+    Removing mdr32fxqi_ssp.o(.ARM.exidx.text.SSP_BRGInit), (8 bytes).
+    Removing mdr32fxqi_i2c.o(.text), (0 bytes).
+    Removing mdr32fxqi_i2c.o(.text.I2C_DeInit), (46 bytes).
+    Removing mdr32fxqi_i2c.o(.ARM.exidx.text.I2C_DeInit), (8 bytes).
+    Removing mdr32fxqi_i2c.o(.ARM.exidx.text.I2C_Init), (8 bytes).
+    Removing mdr32fxqi_i2c.o(.ARM.exidx.text.I2C_StructInit), (8 bytes).
+    Removing mdr32fxqi_i2c.o(.ARM.exidx.text.I2C_Cmd), (8 bytes).
+    Removing mdr32fxqi_i2c.o(.text.I2C_ITConfig), (58 bytes).
+    Removing mdr32fxqi_i2c.o(.ARM.exidx.text.I2C_ITConfig), (8 bytes).
+    Removing mdr32fxqi_i2c.o(.text.I2C_GetITStatus), (40 bytes).
+    Removing mdr32fxqi_i2c.o(.ARM.exidx.text.I2C_GetITStatus), (8 bytes).
+    Removing mdr32fxqi_i2c.o(.text.I2C_ClearITPendingBit), (16 bytes).
+    Removing mdr32fxqi_i2c.o(.ARM.exidx.text.I2C_ClearITPendingBit), (8 bytes).
+    Removing mdr32fxqi_i2c.o(.ARM.exidx.text.I2C_Send7bitAddress), (8 bytes).
+    Removing mdr32fxqi_i2c.o(.ARM.exidx.text.I2C_SendByte), (8 bytes).
+    Removing mdr32fxqi_i2c.o(.ARM.exidx.text.I2C_SendSTOP), (8 bytes).
+    Removing mdr32fxqi_i2c.o(.text.I2C_StartReceiveData), (26 bytes).
+    Removing mdr32fxqi_i2c.o(.ARM.exidx.text.I2C_StartReceiveData), (8 bytes).
+    Removing mdr32fxqi_i2c.o(.text.I2C_GetReceivedData), (12 bytes).
+    Removing mdr32fxqi_i2c.o(.ARM.exidx.text.I2C_GetReceivedData), (8 bytes).
+    Removing mdr32fxqi_i2c.o(.text.I2C_CheckEvent), (44 bytes).
+    Removing mdr32fxqi_i2c.o(.ARM.exidx.text.I2C_CheckEvent), (8 bytes).
+    Removing mdr32fxqi_i2c.o(.ARM.exidx.text.I2C_GetLastEvent), (8 bytes).
+    Removing mdr32fxqi_i2c.o(.ARM.exidx.text.I2C_GetFlagStatus), (8 bytes).
+
+396 unused section(s) (total 9809 bytes) removed from the image.

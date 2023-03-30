@@ -1,0 +1,167 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.38.0.0
+Copyright (C) 2022 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: none none, none, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.38.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.19
+Assembler:       Armasm.exe V6.19
+Linker/Locator:  ArmLink.exe V6.19
+Library Manager: ArmAr.exe V6.19
+Hex Converter:   FromElf.exe V6.19
+CPU DLL:         SARMCM3.DLL V5.38.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      UL2CM3.DLL V1.164.8.0
+Dialog DLL:      TCM.DLL V1.56.4.0
+ 
+<h2>Project:</h2>
+C:\Users\zecxe\Documents\MagnumOpus\Projects\Aircraft control system\Fuzzy regulator embedded software\FuzzyRegulatorSoftware.uvprojx
+Project File Date:  03/30/2023
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.19', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
+Rebuild target 'Target 1'
+src/fuzzy_regulator.c(207): warning: assigning to 'volatile uint32_t *' (aka 'volatile unsigned int *') from 'int32_t *' (aka 'int *') converts between pointers to integer types with different sign [-Wpointer-sign]
+        fuzzyRegulator->ch1.NLT_X       =       HOLD_REG_BUF + NLT1_X_OFFSET;
+                                        ^       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/fuzzy_regulator.c(209): warning: assigning to 'volatile uint32_t *' (aka 'volatile unsigned int *') from 'int32_t *' (aka 'int *') converts between pointers to integer types with different sign [-Wpointer-sign]
+        fuzzyRegulator->ch1.NLT_DOT_NUM =       HOLD_REG_BUF + NLT1_DOT_NUM_OFFSET;
+                                        ^       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/fuzzy_regulator.c(225): warning: assigning to 'volatile uint32_t *' (aka 'volatile unsigned int *') from 'int32_t *' (aka 'int *') converts between pointers to integer types with different sign [-Wpointer-sign]
+        fuzzyRegulator->ch2.NLT_X       =       HOLD_REG_BUF + NLT2_X_OFFSET;
+                                        ^       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/fuzzy_regulator.c(227): warning: assigning to 'volatile uint32_t *' (aka 'volatile unsigned int *') from 'int32_t *' (aka 'int *') converts between pointers to integer types with different sign [-Wpointer-sign]
+        fuzzyRegulator->ch2.NLT_DOT_NUM =       HOLD_REG_BUF + NLT2_DOT_NUM_OFFSET;
+                                        ^       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/fuzzy_regulator.c(243): warning: assigning to 'volatile uint32_t *' (aka 'volatile unsigned int *') from 'int32_t *' (aka 'int *') converts between pointers to integer types with different sign [-Wpointer-sign]
+        fuzzyRegulator->ch3.NLT_X       =       HOLD_REG_BUF + NLT3_X_OFFSET;
+                                        ^       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/fuzzy_regulator.c(245): warning: assigning to 'volatile uint32_t *' (aka 'volatile unsigned int *') from 'int32_t *' (aka 'int *') converts between pointers to integer types with different sign [-Wpointer-sign]
+        fuzzyRegulator->ch3.NLT_DOT_NUM =       HOLD_REG_BUF + NLT3_DOT_NUM_OFFSET;
+                                        ^       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/fuzzy_regulator.c(261): warning: assigning to 'volatile uint32_t *' (aka 'volatile unsigned int *') from 'int32_t *' (aka 'int *') converts between pointers to integer types with different sign [-Wpointer-sign]
+        fuzzyRegulator->ch4.NLT_X       =       HOLD_REG_BUF + NLT4_X_OFFSET;
+                                        ^       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/fuzzy_regulator.c(263): warning: assigning to 'volatile uint32_t *' (aka 'volatile unsigned int *') from 'int32_t *' (aka 'int *') converts between pointers to integer types with different sign [-Wpointer-sign]
+        fuzzyRegulator->ch4.NLT_DOT_NUM =       HOLD_REG_BUF + NLT4_DOT_NUM_OFFSET;
+                                        ^       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/fuzzy_regulator.c(279): warning: assigning to 'volatile uint32_t *' (aka 'volatile unsigned int *') from 'int32_t *' (aka 'int *') converts between pointers to integer types with different sign [-Wpointer-sign]
+        fuzzyRegulator->ch5.NLT_X       =       HOLD_REG_BUF + NLT5_X_OFFSET;
+                                        ^       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/fuzzy_regulator.c(281): warning: assigning to 'volatile uint32_t *' (aka 'volatile unsigned int *') from 'int32_t *' (aka 'int *') converts between pointers to integer types with different sign [-Wpointer-sign]
+        fuzzyRegulator->ch5.NLT_DOT_NUM =       HOLD_REG_BUF + NLT5_DOT_NUM_OFFSET;
+                                        ^       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/fuzzy_regulator.c(297): warning: assigning to 'uint32_t *' (aka 'unsigned int *') from 'int32_t *' (aka 'int *') converts between pointers to integer types with different sign [-Wpointer-sign]
+        fuzzyRegulator->REG_CYCLE_DUR   =       HOLD_REG_BUF + REG_CYCLE_DUR_OFFSET;
+                                        ^       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+11 warnings generated.
+compiling fuzzy_regulator.c...
+compiling current_sensor.c...
+compiling clock.c...
+compiling mbfuncholding.c...
+compiling mb.c...
+compiling mbfuncdiag.c...
+compiling mbascii.c...
+compiling mbcrc.c...
+compiling mbfuncother.c...
+compiling mbfuncdisc.c...
+compiling mbfuncinput.c...
+compiling i2c.c...
+compiling main.c...
+compiling mbfunccoils.c...
+compiling mbrtu.c...
+compiling mbutils.c...
+compiling portevent.c...
+compiling porttimer.c...
+compiling uart.c...
+compiling system_MDR32F9Q2I.c...
+compiling portserial.c...
+compiling motor_control.c...
+compiling MDR32FxQI_port.c...
+compiling MDR32FxQI_i2c.c...
+assembling startup_MDR32F9Q2I.S...
+compiling MDR32FxQI_ssp.c...
+compiling MDR32FxQI_uart.c...
+compiling MDR32FxQI_rst_clk.c...
+compiling MDR32FxQI_timer.c...
+linking...
+.\RTE\Device\MDR32F9Q2I\MDR32F9Q2I.sct(13): warning: L6314W: No section matches pattern *.o(EXECUTABLE_MEMORY_SECTION).
+Program Size: Code=7408 RO-data=848 RW-data=256 ZI-data=12712  
+Finished: 0 information, 1 warning and 0 error messages.
+".\FuzzyRegulatorSoftware.axf" - 0 Error(s), 12 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.9.0.pack
+                ARM.CMSIS.5.9.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.6.0
+
+Package Vendor: Milandr
+                https://ic.milandr.ru/soft/Milandr.MDR32FxQI.1.0.pack
+                Milandr.MDR32FxQI.1.0
+                Milandr MDR32FxQI Series Device Support, Drivers and Examples
+   * Component: Startup Version: 2.0.2i
+   * Component: I2C Version: 2.0.2i
+   * Component: PORT Version: 2.0.2i
+   * Component: RST_CLK Version: 2.0.2i
+   * Component: SSP Version: 2.0.2i
+   * Component: TIMER Version: 2.0.2i
+   * Component: UART Version: 2.0.2i
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/Device/MDR32F9Q2I
+  ./RTE/_Target_1
+  C:/Users/zecxe/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include
+  C:/Users/zecxe/AppData/Local/Arm/Packs/Milandr/MDR32FxQI/1.0/Libraries/CMSIS/MDR32FxQI/CoreSupport/CM3
+  C:/Users/zecxe/AppData/Local/Arm/Packs/Milandr/MDR32FxQI/1.0/Libraries/CMSIS/MDR32FxQI/DeviceSupport/MDR32F9Q2I/inc
+  C:/Users/zecxe/AppData/Local/Arm/Packs/Milandr/MDR32FxQI/1.0/Libraries/SPL/MDR32FxQI/inc
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.6.0
+
+   * Component: Milandr::Device:Startup:2.0.2i
+      Source file:   Libraries/CMSIS/MDR32FxQI/DeviceSupport/MDR32F9Q2I/startup/arm/startup_MDR32F9Q2I.S
+      Source file:   Libraries/SPL/MDR32FxQI/src/IRQ_Handler_Template/MDR32F9Q2I_IT.c
+      Include file:  Libraries/SPL/MDR32FxQI/inc/IRQ_Handler_Template/MDR32F9Q2I_IT.h
+      Include file:  Libraries/CMSIS/MDR32FxQI/CoreSupport/CM3/core_cm3.h
+      Source file:   Libraries/CMSIS/MDR32FxQI/DeviceSupport/MDR32F9Q2I/startup/system_MDR32F9Q2I.c
+      Include file:  Libraries/SPL/MDR32FxQI/MDR32FxQI_config.h
+      Include file:  Libraries/CMSIS/MDR32FxQI/DeviceSupport/MDR32F9Q2I/inc/MDR32F9Q2I.h
+      Include file:  Libraries/CMSIS/MDR32FxQI/DeviceSupport/MDR32F9Q2I/startup/system_MDR32F9Q2I.h
+
+   * Component: Milandr::Drivers:I2C:2.0.2i
+      Include file:  Libraries/SPL/MDR32FxQI/inc/MDR32FxQI_i2c.h
+      Source file:   Libraries/SPL/MDR32FxQI/src/MDR32FxQI_i2c.c
+
+   * Component: Milandr::Drivers:PORT:2.0.2i
+      Include file:  Libraries/SPL/MDR32FxQI/inc/MDR32FxQI_port.h
+      Source file:   Libraries/SPL/MDR32FxQI/src/MDR32FxQI_port.c
+
+   * Component: Milandr::Drivers:RST_CLK:2.0.2i
+      Include file:  Libraries/SPL/MDR32FxQI/inc/MDR32FxQI_rst_clk.h
+      Source file:   Libraries/SPL/MDR32FxQI/src/MDR32FxQI_rst_clk.c
+
+   * Component: Milandr::Drivers:SSP:2.0.2i
+      Source file:   Libraries/SPL/MDR32FxQI/src/MDR32FxQI_ssp.c
+      Include file:  Libraries/SPL/MDR32FxQI/inc/MDR32FxQI_ssp.h
+
+   * Component: Milandr::Drivers:TIMER:2.0.2i
+      Include file:  Libraries/SPL/MDR32FxQI/inc/MDR32FxQI_timer.h
+      Source file:   Libraries/SPL/MDR32FxQI/src/MDR32FxQI_timer.c
+
+   * Component: Milandr::Drivers:UART:2.0.2i
+      Source file:   Libraries/SPL/MDR32FxQI/src/MDR32FxQI_uart.c
+      Include file:  Libraries/SPL/MDR32FxQI/inc/MDR32FxQI_uart.h
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>
